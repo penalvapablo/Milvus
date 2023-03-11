@@ -1,0 +1,39 @@
+---
+import { Image } from '@astrojs/image/components';
+import bg_mobile from '../../../assets/bg-mobile.jpg';
+import logo from '../../../assets/Logo.svg';
+import HeroElementsEs from '../HeroElements/HeroElementsEs';
+import LanguajeSelector from '../LanguajeSelector';
+import MobileBurger from '../MobileBurger';
+import NavEs from '../Nav/NavEs';
+---
+
+<div class="relative h-screen landscape:h-[750px]">
+  <Image
+    alt="prueba"
+    src={bg_mobile}
+    width={640}
+    height={1148}
+    class="absolute top-0 -z-10 h-screen object-cover sm:hidden"
+  />
+  <LanguajeSelector client:load />
+
+  <div
+    class="mt-[40px] flex flex-col items-center justify-center">
+    <Image
+      alt="logo"
+      src={logo}
+      width={75}
+      height={91}
+    />
+    <h1
+      class="text-center text-8xl font-light leading-[5rem] text-white">
+      Milvus Travel
+    </h1>
+  </div>
+
+  <HeroElementsEs />
+
+  <MobileBurger client:load />
+</div>
+<script></script>
