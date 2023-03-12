@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import NavEs from './Nav/NavEs';
+import MobileNavEs from './MobileNav/MobileNavEs';
 import { useState } from 'react';
 
 const MobileBurger = () => {
@@ -16,9 +16,9 @@ const MobileBurger = () => {
       : (document.body.style.overflow = 'auto');
   }
   return (
-    <>
-      {mobileNav && <NavEs />}
-      <div className="fixed bottom-0 flex h-[50px] w-screen  justify-center border-t-4 border-t-one bg-black">
+    <div className="fixed bottom-0 xl:hidden">
+      {mobileNav && <MobileNavEs />}
+      <div className="flex h-[50px] w-screen  justify-center border-t-4 border-t-one bg-black">
         <button
           id="burger menu"
           aria-label="burger menu"
@@ -29,7 +29,7 @@ const MobileBurger = () => {
           />
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

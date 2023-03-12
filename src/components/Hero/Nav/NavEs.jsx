@@ -2,10 +2,8 @@ import React from 'react';
 
 const NavEs = () => {
   return (
-    <nav className="absolute bottom-[50px] left-1/2 h-[225px]  w-[100%] translate-x-[-50%] bg-black min-tall-mobile:h-[250px] min-tall-mobile2:h-[300px]">
-      <ul
-        className="flex h-[100%] flex-col items-center justify-around border-t-4 border-t-one text-center
-      text-[1.30rem] text-white min-tall-mobile:text-2xl">
+    <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
+      <ul className="flex w-[700px] justify-between text-2xl text-white">
         <li>
           <a>Home</a>
         </li>

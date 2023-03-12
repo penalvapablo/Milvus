@@ -1,6 +1,8 @@
 ---
 import { Image } from '@astrojs/image/components';
 import bg_mobile from '../../../assets/bg-mobile.jpg';
+import bg_desktop from '../../../assets/bg-desktop.jpg';
+import bg_bigDesktop from '../../../assets/bg-bigDesktop.jpg';
 import logo from '../../../assets/Logo.svg';
 import HeroElementsEs from '../HeroElements/HeroElementsEs';
 import LanguajeSelector from '../LanguajeSelector';
@@ -8,27 +10,47 @@ import MobileBurger from '../MobileBurger';
 import NavEs from '../Nav/NavEs';
 ---
 
-<div class="relative h-screen landscape:h-[750px]">
+<div
+  class="relative h-screen sm:h-[799px] big-desktop:h-[900px]">
   <Image
-    alt="prueba"
+    alt=""
     src={bg_mobile}
     width={640}
     height={1148}
-    class="absolute top-0 -z-10 h-screen object-cover sm:hidden"
+    class="absolute -z-10 h-screen object-cover sm:hidden"
   />
+
+  <Image
+    alt=""
+    src={bg_desktop}
+    width={1980}
+    height={799}
+    class="absolute -z-10 hidden h-[799px] w-[1980px] object-cover sm:inline big-desktop:hidden"
+  />
+
+  <Image
+    alt=""
+    src={bg_bigDesktop}
+    width={3000}
+    height={1211}
+    class="absolute -z-10 hidden h-[900px] object-cover object-center big-desktop:inline"
+  />
+
+  <NavEs />
   <LanguajeSelector client:load />
 
   <div
-    class="mt-[40px] flex flex-col items-center justify-center">
+    class="flex flex-col items-center justify-center pt-[100px] md:flex-row md:pr-5">
     <Image
       alt="logo"
       src={logo}
       width={75}
       height={91}
     />
+
     <h1
       class="text-center text-8xl font-light leading-[5rem] text-white">
-      Milvus Travel
+      Milvus <br class="sm:hidden" /> Travel
     </h1>
   </div>
 

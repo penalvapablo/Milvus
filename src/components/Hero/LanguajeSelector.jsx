@@ -17,7 +17,7 @@ const LanguajeSelector = ({}) => {
   }, []);
 
   return (
-    <div className="relative flex h-auto justify-center pt-[50px]">
+    <div className="absolute left-1/2 top-12 flex h-auto translate-x-[-50%]  justify-center xl:right-0 xl:left-auto 2xl:right-16">
       <a
         href="/"
         className={`text-2xl ${

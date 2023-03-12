@@ -18,10 +18,11 @@ module.exports = {
       screens: {
         'min-tall-mobile': { raw: '(min-height: 700px)' },
         'min-tall-mobile2': { raw: '(min-height: 800px)' },
+        'big-desktop': { raw: '(min-width: 1980px)' },
       },
       fontFamily: {
         sans: [
-          ['Montserrat', 'sans'],
+          ['Montserrat', ' sans'],
           ...defaultTheme.fontFamily.sans,
         ],
       },
