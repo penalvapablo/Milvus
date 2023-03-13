@@ -5,19 +5,19 @@ const NavEs = () => {
     <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
       <ul className="flex w-[700px] justify-between text-2xl text-white">
         <li>
-          <a>Home</a>
+          <a href="/">Home</a>
         </li>
         <li>
-          <a>Destinos</a>
+          <a href="#destinos">Destinos</a>
         </li>
         <li>
-          <a>Servicios</a>
+          <a href="#servicios">Servicios</a>
         </li>
         <li>
-          <a>Sobre Nosotros</a>
+          <a href="#about">Sobre Nosotros</a>
         </li>
         <li>
-          <a>Contacto</a>
+          <a href="#contacto">Contacto</a>
         </li>
       </ul>
     </nav>

@@ -16,7 +16,7 @@ const MobileBurger = () => {
       : (document.body.style.overflow = 'auto');
   }
   return (
-    <div className="fixed bottom-0 xl:hidden">
+    <div className="fixed bottom-0 z-10 xl:hidden">
       {mobileNav && <MobileNavEs />}
       <div className="flex h-[50px] w-screen  justify-center border-t-4 border-t-one bg-black">
         <button

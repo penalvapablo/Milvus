@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HeroContainerEs from '../components/Hero/HeroContainer/HeroContainerEs.astro';
+import DestinosEs from '../components/Destinos/DestinosEs';
 ---
 
 <Layout
@@ -8,7 +9,8 @@ import HeroContainerEs from '../components/Hero/HeroContainer/HeroContainerEs.as
   description="Agencia de viajes personalizados"
   language="es">
   <HeroContainerEs />
-  <div class="h-[700px] bg-two"></div>
+  <DestinosEs client:load />
+  <div class="h-[1000px] bg-two"></div>
 </Layout>
 
 <style></style>

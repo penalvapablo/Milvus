@@ -4,7 +4,7 @@ const HeroTextEs = () => {
   return (
     <p
       className="absolute bottom-[100px] left-1/2 w-full translate-x-[-50%] text-center text-2xl
-    text-white sm:bottom-12 ">
+    tracking-wide text-white sm:bottom-12 xl:text-3xl">
       <span className="text-one">Travel made easy.</span>
       <br /> Tell us your dream,
       <br className="sm:hidden" /> we’ll make it happen.
