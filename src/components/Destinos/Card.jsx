@@ -77,8 +77,6 @@ const Card = ({
                 ) : (
                   <>{descripcion}</>
                 )}
-
-                {/* {descripcion} */}
               </p>
               <button className="mx-auto mt-8 mb-7 block h-12 rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two ">
                 {cta}
