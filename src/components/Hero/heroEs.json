@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home" : "home",
+    "destinos": "destinos",
+    "servicios": "servicios",
+    "sobreNosotros" : "quienes somos",
+    "contacto": "contacto"
+  },
+  "texto1": "Viajar de manera fácil.",
+  "texto2": "Cuéntannos tu sueño, y nosotros lo haremos realidad."
+}

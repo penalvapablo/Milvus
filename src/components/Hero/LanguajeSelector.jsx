@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-const LanguajeSelector = ({}) => {
+const LanguajeSelector = ({ idioma }) => {
   const [language, setLanguage] = useState('');
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      let path = window.location.pathname;
-      if (path.startsWith('/en')) {
-        setLanguage('en');
-      } else if (path.startsWith('/ar')) {
-        setLanguage('ar');
-      } else {
-        setLanguage('es');
-      }
-    }
+    idioma === 'es' && setLanguage('es');
+    idioma === 'ar' && setLanguage('ar');
+    idioma === 'en' && setLanguage('en');
   }, []);
 
   return (

@@ -1,0 +1,68 @@
+{ "titulo": "بدك افكار ، بدك صور ، بدك اكل بأماكن مشهوره ، بدك مغامرات ، بدك تاريخ ، بدك طبيعه ، كل اشي حسب طلبك",
+  "texto1": "إذا كنت لا تجد ما تبحث عنه، اسأل. دعنا نفاجئك.",
+  "texto2": "اي مكان بالعالم حسب طلبك",
+  "cta": "تكلم معنا",
+  "destinos": [
+    {
+      "destino": "islandia",
+      "titulo": "أَيْسْلَنْدا",
+      "descripcion": "عدد قليل من البلدان لديها مثل هذا القدر المثير للإعجاب من الظواهر الطبيعية في مثل هذا الفضاء الجغرافي الصغير ، كل مكان يعتبر صوره في آيسلندا أينما استدرت ترى جمال و ابداع الخالق ، لهذا السبب تعد أيسلندا واحدة من الأماكن المفضلة لدينا ونود  ان نشارك هذا الجمال معكم ."
+    },
+    {
+      "destino": "uzbekistan",
+      "titulo": "أوزْبِكِسْتان",
+      "descripcion": "آسيا الوسطى، بعد أن كانت ممرًا للقوافل، لديها ثروة ثقافية قديمة ومثيرة للإعجاب للغاية. أوزبكستان على وجه الخصوص مزيج نادر جدا لأنها تمتلك ميراثا من الاتحاد السوفيتي السابق يمكن رؤيته من خلال الحضارة ومتاحفها ومسارحها في العاصمة، وإنشاءات النفوذ الفارسي، والثقافة، و مزيج الاطعمة اللذيذة المكتسبة من القوافل. كما أن تكلفة السفر جيدة جدا .  "
+    },
+    {
+      "destino": "peru",
+      "titulo": "البيرو",
+      "descripcion": "ستجعلك هذه الوجهة تقع في حب ماتشو بيتشو، والأمازون، وقرى الإنكا، والساحل والحيوانات الرائعة، والمغامرة… والطعام البيروفي، الذي يستحق الذكر بشكل منفصل. تعال وشاهد بيرو وستقول إننا كنا على حق. "
+    },
+    {
+      "destino": "mexico",
+      "titulo": "المكسيك",
+      "descripcion": "بالطبع المكسيكهو البلد المميزة بالنسبة لنا،  تعال وشاهد سينوتس والمتاحف والشواطئ في كانكون وغيرها من المدن الساحلية ، وتعرف أفضل خدمة في العالم ، حيث الرفاهية والخلد ، بالطبع تجربة التوابل الشهية الممزوجة بالابتسامة المكسيكية اللطيفة ."
+    },
+    {
+      "destino": "egipto",
+      "titulo": "مصر ( أم الدُنيا ) /",
+      "descripcion": "واحدة من أغنى الحضارات في التاريخ، مع ثقافة لا تصدق والكثير لرؤيته. يمكن أن تكون وجهة معقدة إذا كنت لا تعرف الناس وخصوصياتهم. نحن نعرف ذلك جيدا ويمكننا ضمان أن رحلتك لا تنسى. "
+    },
+    {
+      "destino": "croacia",
+      "titulo": "كرواتيا",
+      "descripcion": "واحدة من المفضلة لدينا لطعامها اللذيذ والمناظر البحرية الرائعة والأشخاص اللطفاء والتاريخ ومهنيتهم تجاه السياحة.  يمكن السفر فيها  بالبحر،  او برًا او كلاهما . كرواتيا وحدها أو بالاشتراك مع دول البلقان الأخرى، لا تفوت فرصة رؤية كرواتيا."
+    },
+    {
+      "destino": "europa",
+      "titulo": "أوروبا",
+      "descripcion": "العواصم الكبرى وأوروبا الوسطى والتزلج وأسواق عيد الميلاد واليخوت والتاريخ.... ماذا تريد؟ نحن نعرف ذلك جيدا ونحب أن نأخذك لترى ما تتمناه. ملاحظة: نحن لا نقوم برحلات أوروبية لفصول التخرج من المراهقين. ولا نقدم الفيزا ، يجب الحصول عليها من السفارة اذا كانت تحتاج للموافقة المسبقة."
+    },
+    {
+      "destino": "jordania",
+      "titulo": "الأردن و فلسطين",
+      "descripcion": "هذه هي رحلتنا المميزة كرس محمود جهوده في خدمات للنقل و اللوجستية في الأردن لسنوات وقد عملت آنا  كمرشد سياحي في جميع أنحاء المنطقة. نحمل هذه الأرض في قلوبنا ونحب أن تعرفها من خلال أعيننا. أخبرنا بالوقت المتاح لديك وسنقدم لك الطريقة الأكثر فعالية حتى تتمكن من التعرف على أكبر قدر ممكن والحصول على  افضل تجربة ،  لتتكيف مع ميزانيتك وأسلوب سفرك."
+    },
+    {
+      "destino": "turquia",
+      "titulo": "Turquía",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "asia",
+      "titulo": "Sudeste Asiático",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "este",
+      "titulo": "Lejano Oriente",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "cruceros",
+      "titulo": "Cruceros y Yates",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    }
+  ]
+}
+

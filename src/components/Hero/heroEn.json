@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home" : "home",
+    "destinos": "destinations",
+    "servicios": "services",
+    "sobreNosotros" : "about us",
+    "contacto": "contact"
+  },
+  "texto1": "Travel Made Easy.",
+  "texto2": "Tell us your dream, we'll make it happen."
+}

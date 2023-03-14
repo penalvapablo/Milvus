@@ -1,15 +1,26 @@
 ---
-import HeroContainerEn from '../../components/Hero/HeroContainerEn.astro';
-import LanguajeSelector from '../../components/Hero/LanguajeSelector.jsx';
+import Destinos from '../../components/Destinos/Destinos';
+import Hero from '../../components/Hero/Hero.astro';
 import Layout from '../../layouts/Layout.astro';
+// import descripciones from '../../components/Destinos/descripcionesEn.json';
+
+//TEXTOS
+import heroTextos from '../../components/Hero/heroAr.json';
+import destinosTextos from '../../components/Destinos/destinosAr.json';
+const idioma = 'ar';
 ---
 
 <Layout
   title="Milvus Travel"
   description="Agencia de viajes personalizados"
   language="ar">
-  <HeroContainerEn />
-  <h1>ÁRABE</h1>
+  <Hero
+    textos={heroTextos}
+    idioma={idioma}
+  />
+  <Destinos
+    client:load
+    textos={destinosTextos}
+    idioma={idioma}
+  />
 </Layout>
-
-<style></style>

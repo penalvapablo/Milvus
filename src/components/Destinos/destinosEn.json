@@ -1,0 +1,68 @@
+{ "titulo": "Some of our favorites",
+  "texto1": "Si no ves el destino que buscas, pregunta y deja que te sorprendamos",
+  "texto2": "Podemos hacer cualquier combinación a medida!",
+  "cta": "Contáctanos",
+  "destinos": [
+    {
+      "destino": "islandia",
+      "titulo": "Islandia",
+      "descripcion": "Pocos países tienen en un espacio geográfico tan pequeño tal cantidad de fenómenos naturales impresionantes y todos…. Una belleza. A donde voltees hay una postal. Por eso Islandia es uno de nuestros sitios favoritos y a los que nos encantaría acompañarte.Pocos países tienen en un espacio geográfico tan pequeño tal cantidad de fenómenos naturales impresionantes y todos…. Una belleza. A donde voltees hay una postal. Por eso Islandia es uno de nuestros sitios favoritos y a los que nos encantaría acompañarte."
+    },
+    {
+      "destino": "uzbekistan",
+      "titulo": "Uzbekistan",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "peru",
+      "titulo": "Perú",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "mexico",
+      "titulo": "México",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "egipto",
+      "titulo": "Egipto",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "croacia",
+      "titulo": "Croacia",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "europa",
+      "titulo": "Europa",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "jordania",
+      "titulo": "Jordania y Tierra Santa",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "turquia",
+      "titulo": "Turquía",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "asia",
+      "titulo": "Sudeste Asiático",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "este",
+      "titulo": "Lejano Oriente",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    },
+    {
+      "destino": "cruceros",
+      "titulo": "Cruceros y Yates",
+      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+    }
+  ]
+}
+

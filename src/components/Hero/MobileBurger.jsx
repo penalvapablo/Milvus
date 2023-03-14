@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import MobileNavEs from './MobileNav/MobileNavEs';
+import MobileNavEs from './MobileNavEs';
 import { useState } from 'react';
 
-const MobileBurger = () => {
+const MobileBurger = ({ textos }) => {
   const [mobileNav, setMobileNav] = useState(false);
   const mobileNavFn = () => {
     console.log('object');
@@ -17,7 +17,7 @@ const MobileBurger = () => {
   }
   return (
     <div className="fixed bottom-0 z-10 xl:hidden">
-      {mobileNav && <MobileNavEs />}
+      {mobileNav && <MobileNavEs textos={textos} />}
       <div className="flex h-[50px] w-screen  justify-center border-t-4 border-t-one bg-black">
         <button
           id="burger menu"

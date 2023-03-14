@@ -1,13 +1,15 @@
 ---
 import { Image } from '@astrojs/image/components';
-import bg_mobile from '../../../assets/bg-mobile.jpg';
-import bg_desktop from '../../../assets/bg-desktop.jpg';
-import bg_bigDesktop from '../../../assets/bg-bigDesktop.jpg';
-import logo from '../../../assets/Logo.svg';
-import HeroElementsEs from '../HeroElements/HeroElementsEs';
-import LanguajeSelector from '../LanguajeSelector';
-import MobileBurger from '../MobileBurger';
-import NavEs from '../Nav/NavEs';
+import bg_mobile from '../../assets/bg-mobile.jpg';
+import bg_desktop from '../../assets/bg-desktop.jpg';
+import bg_bigDesktop from '../../assets/bg-bigDesktop.jpg';
+import logo from '../../assets/Logo.svg';
+import HeroText from './HeroText';
+import LanguajeSelector from './LanguajeSelector';
+import MobileBurger from './MobileBurger';
+import Nav from './Nav';
+
+const { textos, idioma } = Astro.props;
 ---
 
 <div
@@ -36,8 +38,14 @@ import NavEs from '../Nav/NavEs';
     class="absolute -z-10 hidden h-[900px] object-cover object-center big-desktop:inline"
   />
 
-  <NavEs />
-  <LanguajeSelector client:load />
+  <Nav
+    textos={textos}
+    idioma={idioma}
+  />
+  <LanguajeSelector
+    client:load
+    idioma={idioma}
+  />
 
   <div
     class="flex flex-col items-center justify-center pt-[100px] md:flex-row md:pr-5 xl:pr-16">
@@ -54,8 +62,14 @@ import NavEs from '../Nav/NavEs';
     </h1>
   </div>
 
-  <HeroElementsEs />
+  <HeroText
+    textos={textos}
+    idioma={idioma}
+  />
 
-  <MobileBurger client:load />
+  <MobileBurger
+    client:load
+    textos={textos}
+  />
 </div>
 <script></script>
