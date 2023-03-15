@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero/Hero.astro';
 import Destinos from '../components/Destinos/Destinos';
+import Galeria from '../components/Galeria/Galeria';
 
 // TEXTOS
 import heroTextos from '../components/Hero/heroEs.json';
@@ -21,8 +22,13 @@ const idioma = 'es';
   <Destinos
     client:load
     textos={destinosTextos}
+    idioma={idioma}
   />
-  <div class="h-[1000px] bg-two"></div>
+  <Galeria
+    client:load
+    idioma={idioma}
+  />
+  <div class="mt-72 h-[1000px] bg-two"></div>
 </Layout>
 
 <style></style>

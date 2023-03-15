@@ -5,7 +5,10 @@ const Destinos = ({ textos, idioma }) => {
     <section
       id="destinos"
       className="overflow-hidden bg-gray">
-      <h2 className="mx-auto max-w-[80%] pt-12 pb-20 text-center text-5xl font-light tracking-wide text-two">
+      <h2
+        className={`mx-auto max-w-[80%] pt-12 pb-20 text-center 
+        text-${idioma === 'ar' ? '4xl' : '6xl lg:8xl'}
+       font-light tracking-wide text-two xl:max-w-[1120px]`}>
         {textos.titulo}
       </h2>
 

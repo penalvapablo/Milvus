@@ -55,7 +55,7 @@ const Card = ({
               src={`/src/assets/destinos/${destino}-modal.jpg`}
               alt={destino}
               loading="lazy"
-              className="h-800px absolute top-0 -z-10 hidden rounded-xl xl:block"
+              className="absolute top-0 -z-10 hidden rounded-xl xl:block"
             />
             <h3 className=" text-center text-5xl font-semibold capitalize text-one xl:hidden">
               {titulo}
@@ -70,7 +70,7 @@ const Card = ({
             <button className="mx-auto mt-8 mb-7 block h-12 rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two xl:hidden">
               Contáctanos!
             </button>
-            <div className="absolute bottom-0 hidden h-fit w-full rounded-b-xl bg-black/50 xl:block">
+            <div className="absolute bottom-0 hidden h-fit w-full rounded-b-xl bg-black/80 xl:block">
               <p className="mx-auto mt-8 w-[90%] text-center text-lg font-semibold tracking-wide text-white">
                 {idioma === 'ar' ? (
                   <bdi dir="rtl">{descripcion}</bdi>
@@ -104,11 +104,15 @@ const Card = ({
           className="hidden rounded-xl xl:block"
         />
         <h3
-          className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-5xl font-semibold text-${mobileColor} xl:top-[30px] xl:hidden xl:translate-y-0`}>
+          className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-${
+            idioma === 'ar' ? '4xl' : '5xl'
+          } font-semibold text-${mobileColor} w-[95%] xl:top-[30px] xl:hidden xl:translate-y-0`}>
           {titulo}
         </h3>
         <h3
-          className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-5xl font-semibold text-${desktopColor} hidden xl:top-[30px] xl:block xl:translate-y-0`}>
+          className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] 
+          
+          font-semibold text-${desktopColor} hidden w-full xl:top-[30px] xl:block xl:translate-y-0 `}>
           {titulo}
         </h3>
       </button>

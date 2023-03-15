@@ -1,67 +1,67 @@
 { "titulo": "Some of our favorites",
-  "texto1": "Si no ves el destino que buscas, pregunta y deja que te sorprendamos",
-  "texto2": "Podemos hacer cualquier combinación a medida!",
+  "texto1": "If you don’t see what you are looking for, ask. Let us surprise you.",
+  "texto2": "We can make any combo you ask for!",
   "cta": "Contáctanos",
   "destinos": [
     {
       "destino": "islandia",
-      "titulo": "Islandia",
-      "descripcion": "Pocos países tienen en un espacio geográfico tan pequeño tal cantidad de fenómenos naturales impresionantes y todos…. Una belleza. A donde voltees hay una postal. Por eso Islandia es uno de nuestros sitios favoritos y a los que nos encantaría acompañarte.Pocos países tienen en un espacio geográfico tan pequeño tal cantidad de fenómenos naturales impresionantes y todos…. Una belleza. A donde voltees hay una postal. Por eso Islandia es uno de nuestros sitios favoritos y a los que nos encantaría acompañarte."
+      "titulo": "Iceland",
+      "descripcion": "Few countries have, in a reduced geographical area, such a plethora of impressive natural phenomena, and all of them are heartbreakingly beautiful. Everywhere you look there is a picture. This is why Iceland is one of our favorite places and one to which we would love to take you."
     },
     {
       "destino": "uzbekistan",
       "titulo": "Uzbekistan",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "descripcion": "Central Asia was the crossroads of caravans and this is why it has an amazing cultural heritage. Uzbekistan has a more recent past as a Soviet Republic, which left behind order, a bullet train, the Bolshoi Theater, and so, it is an enchanting mixture of very old and very new with its Majolica buildings, its deserts, the food of the caravans. It is also a steal. Do not miss it."
     },
     {
       "destino": "peru",
-      "titulo": "Perú",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Peru",
+      "descripcion": "This destination will make you fall in love: Machu Picchu, the amazon, the Inca villages, the coast and its fabulous fauna, adventure… and Peruvian food, which deserves a separate mention. Come see Peru and you will say we were right."
     },
     {
       "destino": "mexico",
-      "titulo": "México",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Mexico",
+      "descripcion": "Of course Mexico is special to us: come and see cenotes, museums, beaches with the best service in the world, mole, spice and all of it with a warm smile."
     },
     {
       "destino": "egipto",
-      "titulo": "Egipto",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Egypt",
+      "descripcion": "One of the richest civilizations in history, with an incredible culture and so much to see. It can be a complicated destination if you don’t know the people and their idiosyncrasies. We know it well and can ensure your trip is unforgettable."
     },
     {
       "destino": "croacia",
-      "titulo": "Croacia",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Croatia",
+      "descripcion": "One of our favorites for its Delicious food, great seascapes, nice people, history and their professionalism towards tourism. By sea, by land, combined. Croatia alone or in combination with other Balkan countries, do not miss the chance to see Croatia."
     },
     {
       "destino": "europa",
-      "titulo": "Europa",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Europe",
+      "descripcion": "The big capital cities, Central Europe, skiing, Christmas markets, yachting, history…. What do you want? We know it well and we like taking you to see what you wish for. NOTE: we do not do eurotrips for teenage graduating classes."
     },
     {
       "destino": "jordania",
-      "titulo": "Jordania y Tierra Santa",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Jordan and Israel",
+      "descripcion": "This is our star product. Mahmoud has dedicated himself to transportation in Jordan for years and Ana has guided people all over. We have this land in our hearts and we love to show it to you through our eyes. Let us know how much time you have and we will figure out the best way for you to see as much as possible and have a memorable experience. And… in budget."
     },
     {
       "destino": "turquia",
-      "titulo": "Turquía",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Turkey",
+      "descripcion": "Where to start? This country has stolen our hearts because it has everything: great people, spectacular cities, history, incredible landscapes, world-class restaurants, beautiful beaches, ruins…. It is great and as a cherry on the cake, it is not expensive, has great communications and first-class services. Let’s go!"
     },
     {
       "destino": "asia",
-      "titulo": "Sudeste Asiático",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Southeast Asia",
+      "descripcion": "Very popular destination. We can tailor an itinerary according to your wishes, your budget and how much time you have. Imagine: Thailand's temples, floating markets and pristine beaches, Vietnam`s quaint towns and magnificent bays full of islands, the Angkor temples in Cambodia, mysterious Myanmar and Laos and the impressive metropolis in Singapore and Malaysia. In this part of the wold, service is amazing, and so is the food!! Shall we?"
     },
     {
       "destino": "este",
-      "titulo": "Lejano Oriente",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Far East",
+      "descripcion": "The demand for these destinations coupled with our own experiences has led us to make trips to these mysterious countries. The hospitality, the magic and the history are all worth the long trip."
     },
     {
       "destino": "cruceros",
-      "titulo": "Cruceros y Yates",
-      "descripcion": "Asia central, al haber sido el paso de las caravanas, tiene una riqueza cultural antiquísima e impresionante. Uzbekistán en particular es una combinación rarísima dado que tiene herencia de la antigua Unión Sovietica que puede verse en su tren bala y sus museos y teatros en la capital, construcciones de con influencia persa, cultura, comida riquísima rumor de caravanas.  Además tiene un precio espectacular. "
+      "titulo": "Cruises and charter boats",
+      "descripcion": "We love the sea and so, we also organize cruises or charter boats in areas such as the Sea of Cortez, Croatia and Montenegro, Sicily, the Baleares, Turkey. A boat is an opportunity to bond with family and friends, to see different places without switching accommodation every day and to live unique experiences. Ask us. We also make land excursions for people traveling on cruises. Personally designed for you and usually better priced than the bus the cruise-line offers."
     }
   ]
 }

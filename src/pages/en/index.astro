@@ -2,10 +2,11 @@
 import Destinos from '../../components/Destinos/Destinos';
 import Hero from '../../components/Hero/Hero.astro';
 import Layout from '../../layouts/Layout.astro';
-// import descripciones from '../../components/Destinos/descripcionesEn.json';
+import Galeria from '../../components/Galeria/Galeria';
 
 //TEXTOS
 import heroTextos from '../../components/Hero/heroEn.json';
+import destinosTextos from '../../components/Destinos/destinosEn.json';
 const idioma = 'en';
 ---
 
@@ -17,4 +18,14 @@ const idioma = 'en';
     textos={heroTextos}
     idioma={idioma}
   />
+  <Destinos
+    client:load
+    textos={destinosTextos}
+    idioma={idioma}
+  />
+  <Galeria
+    client:load
+    idioma={idioma}
+  />
+  <div class="h-[1000px] bg-two"></div>
 </Layout>

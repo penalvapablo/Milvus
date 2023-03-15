@@ -1,0 +1,13 @@
+{
+  "ar":{
+    "titulo1":"مسافرون",
+    "titulo2": "سعداء"
+  },
+  "es":{
+    "titulo1":"Viajeros",
+    "titulo2": "Felices"
+  },"en":{
+    "titulo1":"Happy",
+    "titulo2": "Travelers"
+  }
+}
