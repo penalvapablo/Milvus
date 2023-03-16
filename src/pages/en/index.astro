@@ -4,11 +4,14 @@ import Hero from '../../components/Hero/Hero.astro';
 import Layout from '../../layouts/Layout.astro';
 import Galeria from '../../components/Galeria/Galeria';
 import Servicios from '../../components/Servicios/Servicios.astro';
+import Testimonios from '../../components/Testimonios/Testimonios.astro';
 
 //TEXTOS
 import heroTextos from '../../components/Hero/heroEn.json';
 import destinosTextos from '../../components/Destinos/destinosEn.json';
 import serviciosTextos from '../../components/Servicios/servicios.json';
+import testimoniosTextos from '../../components/Testimonios/testimoniosEn.json';
+
 const idioma = 'en';
 ---
 
@@ -32,6 +35,10 @@ const idioma = 'en';
   <Galeria
     client:load
     idioma={idioma}
+  />
+  <Testimonios
+    idioma={idioma}
+    textos={testimoniosTextos}
   />
   <!-- <div class="h-[1000px] bg-two"></div> -->
 </Layout>

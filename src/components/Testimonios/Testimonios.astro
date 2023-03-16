@@ -1,0 +1,56 @@
+---
+const { idioma, textos } = Astro.props;
+const {
+  titulo,
+  testimonio1,
+  testimonio2,
+  testimonio3,
+  testimonio4,
+  testimonio5,
+  testimonio6,
+} = textos;
+---
+
+<section class="pb-16">
+  <h2
+    class={`mx-auto max-w-[80%] py-12 text-center text-6xl font-light leading-[4rem] tracking-wide  md:text-7xl lg:text-8xl xl:text-8xl text-two`}>
+    {titulo}
+  </h2>
+
+  <div
+    class="mx-auto flex w-[95%] flex-col gap-6"
+    id="container">
+    <div
+      id="grupo1"
+      class="flex flex-col gap-6">
+      <div class="">
+        <p>{testimonio1.texto}</p>
+        <p>{testimonio1.autor}</p>
+      </div>
+      <div>
+        <p>{testimonio2.texto}</p>
+        <p>{testimonio2.autor}</p>
+      </div>
+      <div>
+        <p>{testimonio3.texto}</p>
+        <p>{testimonio3.autor}</p>
+      </div>
+    </div>
+    <div
+      id="grupo2"
+      class="flex flex-col gap-6">
+      <div>
+        <p>{testimonio4.texto}</p>
+        <p>{testimonio4.autor}</p>
+      </div>
+      <div>
+        <p>{testimonio5.texto}</p>
+        <p>{testimonio5.autor}</p>
+      </div>
+      <div>
+        <p>{testimonio6.texto}</p>
+        <p>{testimonio6.autor}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+{
+  "titulo" : "Testimonios",
+  "testimonio1":{
+    "autor":"Alberto Oceguera, Mexico",
+    "texto":"I visited with 3 other friends and we were amazed by how beautiful Jordan is, we had an extraordinary experience with all the people in this great country, but especially with Ana and Mahmoud, who even before the trip, gave us an exceptional service! They make you feel at home, all the time they make sure you live the experience to the fullest, even in the smaller details. It is super-mega recomendable and no doubt I will come back to get to know more of Jordan!"
+  },
+  "testimonio2":{
+    "autor":"Bob & Judith, USA",
+    "texto":"We asked for very specific sights to see and with a very difficult mission: we are elderly and with some health issues that needed special attention. Ana and Mahmoud did the research, made sure all the sites were accessible even taking into consideration our special circumstances, brought first aid, a folding chair and an arm to lean on and made our trip memorable."
+  },
+  "testimonio3":{
+    "autor":"Susana, Mexico",
+    "texto":"Trip to Egypt and the Holy Land. We are at home, in peace. Thanks a lot for everything! An unforgettable experience!"
+  },
+  "testimonio4":{
+    "autor":"Valentina, Mexico",
+    "texto":"Ana organized for us a trip in the Balcans; Croatia, Montenegro and Bosnia. Everything was spectacular and to the level we were told. Very recommended."
+  },
+  "testimonio5":{
+    "autor":"Fam Rivera, Mexico ",
+    "texto":"Without a doubt, the BEST TRIP of our lives!!!! The heat is terrible! Jajajaj…. But it is the desert!!! You have no idea, what an experience! Especially the guys’ service! Barak our private guide is THE BEST! He pampered our every whim and Hamid is the best Bereber dancer you can ever know, jajaja…. Dinner on the dunes, the walk with the camels….everything! For real, the best trip we have ever made. Thank you Ana for your attention and for keeping an eye on us every step of the way! (TRIP TO MOROCCO)"
+  },
+  "testimonio6":{
+    "autor":"Debbie & Uriel, Mexico",
+    "texto":"3 days in Jordan, from Israel: Mahmoud, Thank you for all your attention, your kindness, for driving us to different places, for the shisha and coffee . We really had a great time with you and Ana. Thank you for everything!"
+  }
+}

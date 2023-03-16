@@ -1,0 +1,27 @@
+{
+  "titulo" : "Testimonios",
+  "testimonio1":{
+    "autor":"Alberto Oceguera, México",
+    "texto":"Visité con otros 3 amigos y quedamos asombrados con lo bello que es Jordania, tuvimos una experiencia extraordinaria con toda la gente de este gran país pero en especial con Ana y Mahmoud que desde antes del viaje nos dieron un servicio excepcional! Te hacen sentir en casa, todo el tiempo están al pendiente de que vivas al máximo la experiencia incluso en los más pequeños detalles, es súper mega recomendable y sin duda volveré de nuevo a conocer más de Jordania!"
+  },
+  "testimonio2":{
+    "autor":"Bob & Judith, USA",
+    "texto":"Pedimos sitios que ver muy específicos y teníamos una misión muy difícil: somos gente mayor con situaciones de salud que requerían atención especial. Ana y Mahmoud hicieron las investigaciones necesarias y se aseguraron de que pudiéramos entrar a todos los sitios tomando en consideración nuestras circunstancias, trajeron primeros auxilios, una silla plegable y un brazo en el cual apoyarse siempre, haciendo nuestro viaje no solo posible, sino memorable."
+  },
+  "testimonio3":{
+    "autor":"Susana, México",
+    "texto":"Viaje a Egipto y Tierra Santa.  Ya estamos en paz en casa. Muchísimas gracias por todo!!! Una experiencia inolvidable."
+  },
+  "testimonio4":{
+    "autor":"Valentina, México",
+    "texto":"Ana nos organizó un viaje por la península balcánica. Croacia, bosnia y Montenegro. Todo fue espectacular y al nivel que ella nos dijo. Recomendadísimo!"
+  },
+  "testimonio5":{
+    "autor":"Fam Rivera, México ",
+    "texto":"Sin duda EL MEJOR VIAJE de nuestra vida!!!!! El calor es terrible! Jajajajaja.... pero es el desierto!!!! Pero no tienen idea La experiencia! Pero sobre todo el servicio de los chicos! Barak nuestro guía privado ES EL MEJOR! Nos cumplió todos nuestros capricho y Jamid es el mejor bailarín Berbere que puedan conocer, jajajajaja...... la cena en las dunas, la caminata con los dromedarios... todo! En vdd el mejor viaje que hemos hecho!!! Gracias Ana por tus atenciones y por estar al pendiente de nosotros en todo momento! (MARRUECOS)"
+  },
+  "testimonio6":{
+    "autor":"Debbie & Uriel, México",
+    "texto":"3 días en Jordania desde Israel: Mahmoud, gracias por tus atenciones, tu amabilidad, por llevarnos a lugares distintos, por la shisha y el café. Realmente disfrutamos mucho contigo y Ana. Gracias por todo!"
+  }
+}
