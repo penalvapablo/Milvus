@@ -1,0 +1,31 @@
+---
+const { idioma, textos } = Astro.props;
+
+const { titulo1, titulo2, texto1, texto2, span, cta } =
+  textos[idioma];
+---
+
+<section
+  id="servicios"
+  class="pb-14">
+  <h2
+    class={`mx-auto max-w-[80%] py-12 text-center text-6xl font-light leading-[4rem] tracking-wide  md:text-7xl lg:text-8xl xl:text-8xl text-two `}>
+    {titulo1}<span class="text-one">{titulo2}</span>.
+  </h2>
+
+  <p
+    class={`max-w-[800px] text-xl text-two w-[90%] mx-auto m-8 text-center font-semibold`}>
+    {texto1}{
+      idioma !== 'ar' && (
+        <>
+          <br />
+          <br />
+        </>
+      )
+    }{texto2}<span class="text-one">{span}</span>
+  </p>
+  <button
+    class="mx-auto block h-12 transform rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two duration-200 hover:bg-one">
+    {cta}
+  </button>
+</section>

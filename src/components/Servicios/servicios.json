@@ -1,0 +1,25 @@
+{
+  "ar":{
+    "titulo1":"يالله نسافر ، ",
+    "titulo2": "يالله نطير",
+    "texto2":"رحلتك معنا بنعملها الك بس بالطريقة الي بتحب ، بنبلش معك من شو رح تحتاج بكل مكان حتى لو كان نوع ابريز الكهربا يلي بالبلد الي رايح عليه او ايش نوع الاكل يلي بناسبك ، كل اشي بالتفصيل ، او ممكن بس نرسملك مسار الرحلة  معنا ",
+    "texto1": "",
+    "span":"حلمك بصير حقيقة",
+    "cta": "تكلم معنا"
+  },
+  "es":{
+    "titulo1":"Nuestros servicios, como nuestros viajes, ",
+    "titulo2": "son hechos para tí",
+    "texto1":"Hay gente que quiere solo una visa porque puede y quiere hacer todo lo demás. Hay gente que nos dice que tiene un mes y que nosotros lo llenemos, encargándonos de absolutamente todo, hasta de decirles que ropa llevar. Tanta o tan poca ayuda como necesites.",
+    "texto2": "Diseño de itinerarios, viajes completos de principio a fin, logística, transportes, servicios de conserje. Todo hecho a medida sobre tu tiempo, necesidades y presupuesto para que no te falte nada y ",   
+    "span":"te lleves solo recuerdos para siempre.",
+    "cta": "Contáctanos"
+  },"en":{
+    "titulo1":"Our services, like our trips, ",
+    "titulo2": "are bespoke",
+    "texto1":"Some people want only a visa, an orientation on making an  itinerary, some people want As much or as little help as you want.",
+    "texto2": "Itinerary design, all inclusive trips, logistics, transportation, concierge services, all of it tailored to your time, needs and budget and made to order, so you have no regrets. ",
+    "span":"Only beautiful memories.",
+    "cta": "Get in touch"
+  }
+}

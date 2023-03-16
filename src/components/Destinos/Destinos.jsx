@@ -7,8 +7,12 @@ const Destinos = ({ textos, idioma }) => {
       className="overflow-hidden bg-gray">
       <h2
         className={`mx-auto max-w-[80%] pt-12 pb-20 text-center 
-        text-${idioma === 'ar' ? '4xl' : '6xl lg:8xl'}
-       font-light tracking-wide text-two xl:max-w-[1120px]`}>
+        ${
+          idioma === 'ar'
+            ? 'text-6xl'
+            : 'text-5xl md:text-6xl lg:text-7xl xl:text-8xl'
+        }
+       font-light leading-[3.5rem] tracking-wide text-two xl:max-w-[1120px]`}>
         {textos.titulo}
       </h2>
 
