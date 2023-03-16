@@ -11,24 +11,24 @@ const Galeria = ({ idioma }) => {
 
   const images = [1, 2, 3, 4, 5, 6, 7];
   const [visibleImages, setVisibleImages] = useState([
-    7, 1, 2,
+    6, 7, 1, 2, 3,
   ]);
 
   const rightFn2 = () => {
-    const lastImage = visibleImages[2];
+    const lastImage = visibleImages[4];
     const firstHiddenImage =
       images[
         (images.indexOf(lastImage) + 1) % images.length
       ];
     setVisibleImages([
-      ...visibleImages.slice(1, 3),
+      ...visibleImages.slice(1, 5),
       firstHiddenImage,
     ]);
   };
 
   const leftFn2 = () => {
     if (visibleImages[0] === 1) {
-      setVisibleImages([7, 1, 2]);
+      setVisibleImages([6, 7, 1, 2, 3]);
       return;
     }
     const lastImage = visibleImages[0];
@@ -38,9 +38,33 @@ const Galeria = ({ idioma }) => {
       ];
     setVisibleImages([
       firstHiddenImage,
-      ...visibleImages.slice(0, 2),
+      ...visibleImages.slice(0, 4),
     ]);
   };
+  console.log(visibleImages);
+
+  function visibleImageFn(n) {
+    if (visibleImages[2] === n) {
+      return 'w-[90%] mx-auto max-w-[800px] xl:absolute xl:left-1/2 xl:translate-x-[-400px] transform duration-500';
+    }
+    if (visibleImages[1] === n) {
+      return 'hidden xl:block xl:absolute xl:left-1/2 xl:translate-x-[-1250px] transform duration-500';
+    }
+    if (visibleImages[0] === n) {
+      return 'hidden xl:block xl:absolute xl:left-1/2 xl:translate-x-[-2100px] transform duration-500';
+    }
+    if (visibleImages[3] === n) {
+      return 'hidden xl:block xl:absolute xl:right-1/2 xl:translate-x-[1250px] transform duration-500';
+    }
+    if (visibleImages[4] === n) {
+      return 'hidden xl:block xl:absolute xl:right-1/2 xl:translate-x-[2100px] transform duration-500';
+    }
+    return 'hidden';
+  }
+
+  function dotPositionFn(n) {
+    return visibleImages[2] === n ? 'bg-two' : 'bg-one';
+  }
 
   return (
     <section className="xl:overflow-x-hidden">
@@ -51,48 +75,121 @@ const Galeria = ({ idioma }) => {
         <span className="text-two">{titulo.titulo1} </span>
         <span className="text-one">{titulo.titulo2}</span>
       </h1>
+      <div className="">
+        <div className="mb-8 h-fit w-full   xl:relative xl:h-[600px]">
+          {images.map((img) => {
+            return (
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`/galeria/foto${img}.webp`}
+                />
+                <img
+                  src={`/galeria/foto1.jpg`}
+                  alt=""
+                  className={`max-h-[600px] w-[90%] max-w-[800px] rounded-xl xl:w-full ${visibleImageFn(
+                    img
+                  )}`}
+                />
+              </picture>
+            );
+          })}
 
-      <div className="xl:relative xl:h-[600px] ">
-        <div className="mb-8 h-fit xl:absolute xl:left-1/2 xl:flex xl:h-[600px] xl:w-[2600px] xl:translate-x-[-50%] xl:justify-between">
-          <picture>
-            <source
-              type="image/webp"
-              srcSet={`/galeria/foto${visibleImages[0]}.webp`}
-            />
-            <img
-              src={`/galeria/foto${visibleImages[0]}.jpg`}
-              alt=""
-              loading="lazy"
-              className="hidden max-h-[600px] w-[90%] max-w-[800px] rounded-xl xl:block xl:w-full"
-            />
-          </picture>
-          <picture>
-            <source
-              type="image/webp"
-              srcSet={`/galeria/foto${visibleImages[1]}.webp`}
-            />
-            <img
-              src={`/galeria/foto${visibleImages[1]}.jpg`}
-              alt=""
-              loading="lazy"
-              className="mx-auto max-h-[600px] w-[90%] max-w-[800px] rounded-xl xl:block xl:w-full"
-            />
-          </picture>
-          <picture>
-            <source
-              type="image/webp"
-              srcSet={`/galeria/foto${visibleImages[2]}.webp`}
-            />
-            <img
-              src={`/galeria/foto${visibleImages[2]}.jpg`}
-              alt=""
-              loading="lazy"
-              className="hidden max-h-[600px] w-[90%] max-w-[800px]  rounded-xl xl:block xl:w-full"
-            />
-          </picture>
+          {/* <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto1.webp`}
+              />
+              <img
+                src={`/galeria/foto1.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  1
+                )}`}
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto2.webp`}
+              />
+              <img
+                src={`/galeria/foto2.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  2
+                )}`}
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto3.webp`}
+              />
+              <img
+                src={`/galeria/foto3.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  3
+                )}`}
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto4.webp`}
+              />
+              <img
+                src={`/galeria/foto4.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  4
+                )}`}
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto5.webp`}
+              />
+              <img
+                src={`/galeria/foto5.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  5
+                )}`}
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto6.webp`}
+              />
+              <img
+                src={`/galeria/foto6.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  6
+                )}`}
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/galeria/foto7.webp`}
+              />
+              <img
+                src={`/galeria/foto7.jpg`}
+                alt=""
+                className={` max-h-[600px] w-[90%] max-w-[800px]  rounded-xl  xl:w-full ${visibleImageFn(
+                  7
+                )}`}
+              />
+            </picture> */}
         </div>
       </div>
 
+      {/* CONTROL DE FOTOS */}
       <div className="relative mx-auto my-8 flex h-fit w-fit items-center gap-3">
         <button>
           <FontAwesomeIcon
@@ -101,34 +198,15 @@ const Galeria = ({ idioma }) => {
             onClick={leftFn2}
           />
         </button>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 1 ? 'bg-two' : 'bg-one'
-          }`}></div>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 2 ? 'bg-two' : 'bg-one'
-          }`}></div>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 3 ? 'bg-two' : 'bg-one'
-          }`}></div>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 4 ? 'bg-two' : 'bg-one'
-          }`}></div>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 5 ? 'bg-two' : 'bg-one'
-          }`}></div>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 6 ? 'bg-two' : 'bg-one'
-          }`}></div>
-        <div
-          className={`h-3 w-3 rounded-full ${
-            visibleImages[1] === 7 ? 'bg-two' : 'bg-one'
-          }`}></div>
+        {images.map((n) => {
+          return (
+            <div
+              key={n}
+              className={`h-3 w-3 rounded-full ${dotPositionFn(
+                n
+              )}`}></div>
+          );
+        })}
         <button>
           <FontAwesomeIcon
             icon={faCircleChevronRight}

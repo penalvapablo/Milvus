@@ -54,10 +54,10 @@ const Card = ({
             <picture>
               <source
                 type="image/webp"
-                srcSet={`/src/assets/destinos/${destino}-modal.webp`}
+                srcSet={`/destinos/${destino}-modal.webp`}
               />
               <img
-                src={`/src/assets/destinos/${destino}-modal.jpg`}
+                src={`/destinos/${destino}-modal.jpg`}
                 alt={destino}
                 loading="lazy"
                 className="absolute top-0 -z-10 hidden rounded-xl xl:block"
@@ -100,10 +100,10 @@ const Card = ({
         <picture>
           <source
             type="image/webp"
-            srcSet={`/src/assets/destinos/${destino}-mobile.webp`}
+            srcSet={`/destinos/${destino}-mobile.webp`}
           />
           <img
-            src={`/src/assets/destinos/${destino}-mobile.jpg`}
+            src={`/destinos/${destino}-mobile.jpg`}
             alt={destino}
             loading="lazy"
             className="rounded-xl xl:hidden"
@@ -112,10 +112,10 @@ const Card = ({
         <picture>
           <source
             type="image/webp"
-            srcSet={`/src/assets/destinos/${destino}-desktop.webp`}
+            srcSet={`/destinos/${destino}-desktop.webp`}
           />
           <img
-            src={`/src/assets/destinos/${destino}-desktop.jpg`}
+            src={`/destinos/${destino}-desktop.jpg`}
             alt={destino}
             loading="lazy"
             className="hidden rounded-xl xl:block"
