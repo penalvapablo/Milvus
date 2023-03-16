@@ -51,12 +51,18 @@ const Card = ({
                 className="absolute right-[-12px] top-[-12px] z-10 h-8 rounded-full bg-two text-one "
               />
             </button>
-            <img
-              src={`/src/assets/destinos/${destino}-modal.jpg`}
-              alt={destino}
-              loading="lazy"
-              className="absolute top-0 -z-10 hidden rounded-xl xl:block"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`/src/assets/destinos/${destino}-modal.webp`}
+              />
+              <img
+                src={`/src/assets/destinos/${destino}-modal.jpg`}
+                alt={destino}
+                loading="lazy"
+                className="absolute top-0 -z-10 hidden rounded-xl xl:block"
+              />
+            </picture>
             <h3 className=" text-center text-5xl font-semibold capitalize text-one xl:hidden">
               {titulo}
             </h3>
@@ -91,18 +97,30 @@ const Card = ({
         aria-label={destino}
         className="relative"
         onClick={modalFn}>
-        <img
-          src={`/src/assets/destinos/${destino}-mobile.jpg`}
-          alt={destino}
-          loading="lazy"
-          className="rounded-xl xl:hidden"
-        />
-        <img
-          src={`/src/assets/destinos/${destino}-desktop.jpg`}
-          alt={destino}
-          loading="lazy"
-          className="hidden rounded-xl xl:block"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={`/src/assets/destinos/${destino}-mobile.webp`}
+          />
+          <img
+            src={`/src/assets/destinos/${destino}-mobile.jpg`}
+            alt={destino}
+            loading="lazy"
+            className="rounded-xl xl:hidden"
+          />
+        </picture>
+        <picture>
+          <source
+            type="image/webp"
+            srcSet={`/src/assets/destinos/${destino}-desktop.webp`}
+          />
+          <img
+            src={`/src/assets/destinos/${destino}-desktop.jpg`}
+            alt={destino}
+            loading="lazy"
+            className="hidden rounded-xl xl:block"
+          />
+        </picture>
         <h3
           className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-${
             idioma === 'ar' ? '4xl' : '5xl'
@@ -111,7 +129,7 @@ const Card = ({
         </h3>
         <h3
           className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] 
-          
+          text-${idioma === 'ar' ? '4xl' : '5xl'}
           font-semibold text-${desktopColor} hidden w-full xl:top-[30px] xl:block xl:translate-y-0 `}>
           {titulo}
         </h3>

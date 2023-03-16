@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import galeriaTextos from './galeria.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -8,30 +8,27 @@ import {
 
 const Galeria = ({ idioma }) => {
   const titulo = galeriaTextos[idioma];
-  // const [active, setActive] = useState(1);
-  // const [left, setLeft] = useState(7);
-  // const [right, setRight] = useState(2);
+
   const images = [1, 2, 3, 4, 5, 6, 7];
   const [visibleImages, setVisibleImages] = useState([
-    6, 7, 1, 2, 3,
+    7, 1, 2,
   ]);
-  console.log(visibleImages[3]);
 
-  const leftFn2 = () => {
-    const lastImage = visibleImages[4];
+  const rightFn2 = () => {
+    const lastImage = visibleImages[2];
     const firstHiddenImage =
       images[
         (images.indexOf(lastImage) + 1) % images.length
       ];
     setVisibleImages([
-      ...visibleImages.slice(1, 5),
+      ...visibleImages.slice(1, 3),
       firstHiddenImage,
     ]);
   };
 
-  const rightFn2 = () => {
+  const leftFn2 = () => {
     if (visibleImages[0] === 1) {
-      setVisibleImages([7, 1, 2, 3, 4]);
+      setVisibleImages([7, 1, 2]);
       return;
     }
     const lastImage = visibleImages[0];
@@ -41,63 +38,12 @@ const Galeria = ({ idioma }) => {
       ];
     setVisibleImages([
       firstHiddenImage,
-      ...visibleImages.slice(0, 4),
+      ...visibleImages.slice(0, 2),
     ]);
   };
 
-  // const leftFn = () => {
-  //   if (active === 1) {
-  //     setActive(7);
-  //     setLeft(6);
-  //     setRight(1);
-  //     return;
-  //   }
-  //   if (right === 1) {
-  //     setRight(7);
-  //     setActive(6);
-  //     setLeft(5);
-  //     return;
-  //   }
-  //   if (left === 1) {
-  //     setRight(2);
-  //     setActive(1);
-  //     setLeft(7);
-  //     return;
-  //   }
-  //   setActive(active - 1);
-  //   setLeft(left - 1);
-  //   setRight(right - 1);
-  // };
-  // const rightFn = () => {
-  //   if (left === 7) {
-  //     setActive(2);
-  //     setLeft(1);
-  //     setRight(3);
-  //     return;
-  //   }
-  //   if (right === 7) {
-  //     setRight(1);
-  //     setActive(7);
-  //     setLeft(6);
-  //     return;
-  //   }
-  //   if (active === 7) {
-  //     setRight(2);
-  //     setActive(1);
-  //     setLeft(7);
-  //     return;
-  //   }
-  //   setActive(active + 1);
-  //   setLeft(left + 1);
-  //   setRight(right + 1);
-  // };
-
-  // // console.log({ left });
-  // // console.log({ active });
-  // // console.log({ right });
-
   return (
-    <section>
+    <section className="xl:overflow-x-hidden">
       <h1
         className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-${
           idioma === 'ar' ? '6xl' : '6xl lg:8xl'
@@ -106,84 +52,90 @@ const Galeria = ({ idioma }) => {
         <span className="text-one">{titulo.titulo2}</span>
       </h1>
 
-      <div className="relative w-full">
-        <div className="relative mb-8 flex">
-          <img
-            src={`/src/assets/galeria/foto${visibleImages[0]}.jpg`}
-            alt=""
-            loading="lazy"
-            className="absolute top-0 hidden w-[90%]  rounded-xl"
-          />
-          <img
-            src={`/src/assets/galeria/foto${visibleImages[1]}.jpg`}
-            alt=""
-            loading="lazy"
-            className="absolute top-0 hidden w-[90%] rounded-xl "
-          />
-          <img
-            src={`/src/assets/galeria/foto${visibleImages[2]}.jpg`}
-            alt=""
-            loading="lazy"
-            className="absolute top-0 left-1/2 w-[90%] translate-x-[-50%] rounded-xl"
-          />
-          <img
-            src={`/src/assets/galeria/foto${visibleImages[3]}.jpg`}
-            alt=""
-            loading="lazy"
-            className="absolute top-0 hidden w-[90%]  rounded-xl"
-          />
-          <img
-            src={`/src/assets/galeria/foto${visibleImages[4]}.jpg`}
-            alt=""
-            loading="lazy"
-            className="absolute top-0 hidden w-[90%] rounded-xl "
-          />
+      <div className="xl:relative xl:h-[600px] ">
+        <div className="mb-8 h-fit xl:absolute xl:left-1/2 xl:flex xl:h-[600px] xl:w-[2600px] xl:translate-x-[-50%] xl:justify-between">
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={`/galeria/foto${visibleImages[0]}.webp`}
+            />
+            <img
+              src={`/galeria/foto${visibleImages[0]}.jpg`}
+              alt=""
+              loading="lazy"
+              className="hidden max-h-[600px] w-[90%] max-w-[800px] rounded-xl xl:block xl:w-full"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={`/galeria/foto${visibleImages[1]}.webp`}
+            />
+            <img
+              src={`/galeria/foto${visibleImages[1]}.jpg`}
+              alt=""
+              loading="lazy"
+              className="mx-auto max-h-[600px] w-[90%] max-w-[800px] rounded-xl xl:block xl:w-full"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={`/galeria/foto${visibleImages[2]}.webp`}
+            />
+            <img
+              src={`/galeria/foto${visibleImages[2]}.jpg`}
+              alt=""
+              loading="lazy"
+              className="hidden max-h-[600px] w-[90%] max-w-[800px]  rounded-xl xl:block xl:w-full"
+            />
+          </picture>
         </div>
+      </div>
 
-        <div className="relative mx-auto mt-6 flex h-fit w-fit items-center gap-3">
-          <button>
-            <FontAwesomeIcon
-              icon={faCircleChevronLeft}
-              className=" h-8 rounded-full bg-white text-one "
-              onClick={leftFn2}
-            />
-          </button>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 1 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 7 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 6 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 5 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 4 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 3 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <div
-            className={`h-3 w-3 rounded-full ${
-              visibleImages[2] === 2 ? 'bg-two' : 'bg-one'
-            }`}></div>
-          <button>
-            <FontAwesomeIcon
-              icon={faCircleChevronRight}
-              className="h-8 rounded-full bg-white text-one "
-              onClick={rightFn2}
-            />
-          </button>
-        </div>
+      <div className="relative mx-auto my-8 flex h-fit w-fit items-center gap-3">
+        <button>
+          <FontAwesomeIcon
+            icon={faCircleChevronLeft}
+            className=" h-8 rounded-full bg-white text-one "
+            onClick={leftFn2}
+          />
+        </button>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 1 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 2 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 3 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 4 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 5 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 6 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <div
+          className={`h-3 w-3 rounded-full ${
+            visibleImages[1] === 7 ? 'bg-two' : 'bg-one'
+          }`}></div>
+        <button>
+          <FontAwesomeIcon
+            icon={faCircleChevronRight}
+            className="h-8 rounded-full bg-white text-one "
+            onClick={rightFn2}
+          />
+        </button>
       </div>
     </section>
   );
