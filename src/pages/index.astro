@@ -12,6 +12,7 @@ import heroTextos from '../components/Hero/heroEs.json';
 import destinosTextos from '../components/Destinos/destinosEs.json';
 import serviciosTextos from '../components/Servicios/servicios.json';
 import testimoniosTextos from '../components/Testimonios/testimoniosEs.json';
+import contactoTextos from '../components/Contacto/contacto.json';
 const idioma = 'es';
 ---
 
@@ -40,9 +41,11 @@ const idioma = 'es';
     idioma={idioma}
     textos={testimoniosTextos}
   />
-  <Contacto />
+  <Contacto
+    client:load
+    textos={contactoTextos[idioma]}
+    idioma={idioma}
+  />
 
-  <!-- <div class="mt-72 h-[1000px] bg-two"></div> -->
+  <style></style>
 </Layout>
-
-<style></style>

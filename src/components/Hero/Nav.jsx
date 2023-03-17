@@ -1,6 +1,16 @@
 import React from 'react';
 
 const Nav = ({ textos, idioma }) => {
+  function homeFn() {
+    if (idioma === 'ar') {
+      return '/ar';
+    }
+    if (idioma === 'es') {
+      return '/es';
+    }
+    return '/';
+  }
+
   return (
     <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
       <ul
@@ -8,11 +18,27 @@ const Nav = ({ textos, idioma }) => {
           idioma === 'ar' && 'flex-row-reverse'
         } w-[700px] justify-between text-2xl text-white`}>
         <li>
-          <a
-            href="/"
-            className="capitalize">
-            {textos.nav.home}
-          </a>
+          {idioma === 'ar' && (
+            <a
+              href="/ar"
+              className="capitalize">
+              {textos.nav.home}
+            </a>
+          )}
+          {idioma === 'es' && (
+            <a
+              href="/"
+              className="capitalize">
+              {textos.nav.home}
+            </a>
+          )}
+          {idioma === 'en' && (
+            <a
+              href="/"
+              className="capitalize">
+              {textos.nav.home}
+            </a>
+          )}
         </li>
         <li>
           <a
