@@ -41,7 +41,7 @@ const Card = ({
           <div
             onClick={modalFn}
             className="fixed left-1/2 top-1/2 z-10 h-screen w-screen translate-x-[-50%] translate-y-[-50%]  bg-black/50"></div>
-          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px]  w-[90%] max-w-[360px] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two xl:h-[800px] xl:w-[800px] xl:max-w-none min-tall-mobile:max-h-[800px]">
+          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px]  w-[95%] max-w-[360px] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two xl:h-[800px] xl:w-[800px] xl:max-w-none min-tall-mobile:max-h-[800px]">
             <button
               onClick={modalFn}
               id="close-modal"
@@ -63,14 +63,14 @@ const Card = ({
                 className="absolute top-0 -z-10 hidden rounded-xl xl:block"
               />
             </picture>
-            <h3 className=" text-center text-5xl font-semibold capitalize text-one xl:hidden">
+            <h3 className="mx-auto max-w-[90%] text-center text-5xl font-semibold capitalize text-one xl:hidden">
               {titulo}
             </h3>
             <h3
               className={`mt-8 text-center text-6xl font-semibold capitalize text-${desktopColor} hidden xl:block`}>
               {titulo}
             </h3>
-            <p className="mx-auto mt-4 max-h-[300px] w-[90%] overflow-y-scroll text-center text-lg font-semibold tracking-wide text-white xl:hidden min-tall-mobile:max-h-fit">
+            <p className="mx-auto mt-8 max-h-[300px] w-[90%] overflow-y-scroll  text-center text-lg font-semibold tracking-wide text-white xl:hidden min-tall-mobile2:max-h-[400px]">
               {descripcion}
             </p>
             <button className="mx-auto mt-8 mb-7 block h-12 rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two xl:hidden">
