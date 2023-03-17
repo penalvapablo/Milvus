@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import About from '../components/About/About.astro';
+import Contacto from '../components/Contacto/Contacto';
+
+import textos from '../components/About/aboutEs.json';
+import MobileBurger from '../components/Hero/MobileBurger';
+import heroTextos from '../components/Hero/heroEs.json';
+import contactoTextos from '../components/Contacto/contacto.json';
+
+console.log('object');
+const idioma = 'es';
+---
+
+<Layout
+  title="Sobre Nosotros "
+  description="Agencia de viajes personalizados"
+  language="es">
+  <About textos={textos} />
+  <Contacto
+    client:load
+    textos={contactoTextos}
+    idioma={idioma}
+  />
+
+  <MobileBurger
+    client:load
+    textos={heroTextos}
+    idioma={idioma}
+  />
+</Layout>

@@ -1,12 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import MobileNavEs from './MobileNavEs';
+import MobileNav from './MobileNav';
 import { useState } from 'react';
 
-const MobileBurger = ({ textos }) => {
+const MobileBurger = ({ textos, idioma }) => {
   const [mobileNav, setMobileNav] = useState(false);
   const mobileNavFn = () => {
-    console.log('object');
     setMobileNav(!mobileNav);
   };
   // Preven scrolling when mobile nav activated
@@ -17,7 +16,13 @@ const MobileBurger = ({ textos }) => {
   }
   return (
     <div className="fixed bottom-0 z-10 xl:hidden">
-      {mobileNav && <MobileNavEs textos={textos} />}
+      {mobileNav && (
+        <MobileNav
+          textos={textos}
+          idioma={idioma}
+          mobileNavFn={mobileNavFn}
+        />
+      )}
       <div className="flex h-[50px] w-screen  justify-center border-t-4 border-t-one bg-black">
         <button
           id="burger menu"

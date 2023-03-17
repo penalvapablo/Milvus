@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Contacto = ({ textos, idioma }) => {
-  const { titulo, copyright } = textos;
+  const { copyright } = textos[idioma];
+  console.log(copyright);
   return (
     <footer
       id="contacto"

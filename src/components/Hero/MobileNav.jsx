@@ -1,22 +1,11 @@
 import React from 'react';
 
-const Nav = ({ textos, idioma }) => {
-  function homeFn() {
-    if (idioma === 'ar') {
-      return '/ar';
-    }
-    if (idioma === 'es') {
-      return '/es';
-    }
-    return '/';
-  }
-
+const MobileNav = ({ textos, idioma, mobileNavFn }) => {
   return (
-    <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
+    <nav className="absolute  left-1/2 top-[-225px] h-[225px]  w-[100%] translate-x-[-50%] bg-black min-tall-mobile:top-[-250px] min-tall-mobile:h-[250px] min-tall-mobile2:top-[-300px] min-tall-mobile2:h-[300px]">
       <ul
-        className={`flex ${
-          idioma === 'ar' && 'flex-row-reverse'
-        } w-[700px] justify-between text-2xl text-white`}>
+        className="flex h-[100%] flex-col items-center justify-around border-t-4 border-t-one text-center
+      text-[1.30rem] text-white min-tall-mobile:text-2xl">
         <li>
           {idioma === 'ar' && (
             <a
@@ -42,15 +31,17 @@ const Nav = ({ textos, idioma }) => {
         </li>
         <li>
           <a
-            href="#destinos"
-            className="capitalize">
+            href="/#destinos"
+            className="capitalize"
+            onClick={mobileNavFn}>
             {textos.nav.destinos}
           </a>
         </li>
         <li>
           <a
-            href="#servicios"
-            className="capitalize">
+            href="/#servicios"
+            className="capitalize"
+            onClick={mobileNavFn}>
             {textos.nav.servicios}
           </a>
         </li>
@@ -80,7 +71,8 @@ const Nav = ({ textos, idioma }) => {
         <li>
           <a
             href="#contacto"
-            className="capitalize">
+            className="capitalize"
+            onClick={mobileNavFn}>
             {textos.nav.contacto}
           </a>
         </li>
@@ -89,4 +81,4 @@ const Nav = ({ textos, idioma }) => {
   );
 };
 
-export default Nav;
+export default MobileNav;
