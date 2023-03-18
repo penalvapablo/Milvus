@@ -19,7 +19,7 @@ const Contacto = ({ textos, idioma }) => {
             className="h-[40px] justify-items-end text-end text-two"
           />
           <a
-            className="text-xl text-two duration-100 hover:text-2xl"
+            className="text-xl text-two duration-100 hover:text-one"
             href={`tel:+${
               idioma === 'ar'
                 ? '962799757654'
@@ -35,20 +35,20 @@ const Contacto = ({ textos, idioma }) => {
             icon={faWhatsapp}
             className="h-[40px] justify-items-end text-end text-two"
           />
-          <button className="text-xl text-two duration-100 hover:text-2xl ">
-            <a
-              href={`https://api.whatsapp.com/send?phone=${
-                idioma === 'ar'
-                  ? '962799757654'
-                  : '5215554094418'
-              }`}
-              rel="noreferrer"
-              target="_blank">
-              {idioma === 'ar'
-                ? '+962 7 9975 7654'
-                : '+52 1 555409 4418'}
-            </a>
-          </button>
+
+          <a
+            href={`https://api.whatsapp.com/send?phone=${
+              idioma === 'ar'
+                ? '962799757654'
+                : '5215554094418'
+            }`}
+            rel="noreferrer"
+            target="_blank"
+            className="text-xl text-two duration-500 hover:text-one">
+            {idioma === 'ar'
+              ? '+962 7 9975 7654'
+              : '+52 1 555409 4418'}
+          </a>
         </div>
         <div className="flex items-center gap-6">
           <FontAwesomeIcon
