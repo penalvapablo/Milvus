@@ -95,7 +95,9 @@ const Galeria = ({ idioma }) => {
 
       {/* CONTROL DE FOTOS */}
       <div className="relative mx-auto flex h-fit w-fit items-center gap-3 pt-8 pb-16">
-        <button>
+        <button
+          id="galery-left"
+          aria-label="galery-left">
           <FontAwesomeIcon
             icon={faCircleChevronLeft}
             className=" h-8 rounded-full bg-white text-one "
@@ -111,7 +113,9 @@ const Galeria = ({ idioma }) => {
               )}`}></div>
           );
         })}
-        <button>
+        <button
+          id="galery-right"
+          aria-label="galery-right">
           <FontAwesomeIcon
             icon={faCircleChevronRight}
             className="h-8 rounded-full bg-white text-one "
