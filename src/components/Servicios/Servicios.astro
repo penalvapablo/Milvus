@@ -9,7 +9,7 @@ const { titulo1, titulo2, texto1, texto2, span, cta } =
   id="servicios"
   class="pb-14">
   <h2
-    class={`mx-auto max-w-[95%] py-12 text-center text-6xl font-light leading-[4rem] tracking-wide  md:text-7xl lg:text-8xl xl:text-8xl text-two `}>
+    class={`mx-auto max-w-[95%] py-12 text-center text-6xl font-light leading-[4rem] tracking-wide  md:text-7xl lg:text-8xl  xl:max-w-[1200px] text-two `}>
     {titulo1}<span class="text-one">{titulo2}</span>.
   </h2>
 
@@ -24,8 +24,14 @@ const { titulo1, titulo2, texto1, texto2, span, cta } =
       )
     }{texto2}<span class="text-one">{span}</span>
   </p>
-  <button
-    class="mx-auto block h-12 transform rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two duration-200 hover:bg-one">
+
+  <a
+    href={`https://api.whatsapp.com/send?phone=${
+      idioma === 'ar' ? '962799757654' : '5215554094418'
+    }`}
+    class="mx-auto block w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-2xl font-bold text-two duration-200 hover:bg-one"
+    rel="noreferrer"
+    target="_blank">
     {cta}
-  </button>
+  </a>
 </section>

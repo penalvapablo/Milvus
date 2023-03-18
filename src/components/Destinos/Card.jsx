@@ -41,7 +41,7 @@ const Card = ({
           <div
             onClick={modalFn}
             className="fixed left-1/2 top-1/2 z-10 h-screen w-screen translate-x-[-50%] translate-y-[-50%]  bg-black/50"></div>
-          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px]  w-[90%] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two xl:h-[800px] xl:w-[800px] xl:max-w-none min-tall-mobile:max-h-[800px] min-tall-mobile:max-w-[360px] ">
+          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px]  w-[90%] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two  xl:h-[800px] xl:w-[800px] xl:max-w-none min-tall-mobile:max-h-[800px] ">
             <button
               onClick={modalFn}
               id="close-modal"
@@ -73,9 +73,18 @@ const Card = ({
             <p className="mx-auto mt-8 max-h-[100px] w-[90%] scroll-ml-1 overflow-y-scroll text-center  text-lg font-semibold tracking-wide text-white xl:hidden min-tall-mobile3:max-h-[300px] min-tall-mobile2:max-h-[400px]">
               {descripcion}
             </p>
-            <button className="mx-auto mt-8 mb-7 block h-12 rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two xl:hidden">
-              Contáctanos!
-            </button>
+
+            <a
+              href={`https://api.whatsapp.com/send?phone=${
+                idioma === 'ar'
+                  ? '962799757654'
+                  : '5215554094418'
+              }`}
+              class="mx-auto mt-8 mb-7 block w-[95%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-2xl font-bold text-two duration-200 hover:bg-one xl:hidden"
+              rel="noreferrer"
+              target="_blank">
+              {cta}
+            </a>
             <div className="absolute bottom-0 hidden h-fit w-full rounded-b-xl bg-black/80 xl:block">
               <p className="mx-auto mt-8 w-[90%] text-center text-lg font-semibold tracking-wide text-white">
                 {idioma === 'ar' ? (
@@ -84,9 +93,17 @@ const Card = ({
                   <>{descripcion}</>
                 )}
               </p>
-              <button className="mx-auto mt-8 mb-7 block h-12 rounded-full bg-four px-[3.75rem] text-2xl font-bold text-two ">
+              <a
+                href={`https://api.whatsapp.com/send?phone=${
+                  idioma === 'ar'
+                    ? '962799757654'
+                    : '5215554094418'
+                }`}
+                class="mx-auto mt-8 mb-7 block w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-2xl font-bold text-two duration-200 hover:bg-one"
+                rel="noreferrer"
+                target="_blank">
                 {cta}
-              </button>
+              </a>
             </div>
           </div>
         </>

@@ -14,6 +14,7 @@ module.exports = {
       gray: '#F7F7F7',
       white: '#FFFFFF',
       black: '#000000',
+      drakGray: '#292929',
     },
     extend: {
       screens: {
