@@ -1,8 +1,8 @@
 ---
 import { Image } from '@astrojs/image/components';
 import bg_mobile from '../../assets/bg-mobile.jpg';
-import bg_desktop from '../../assets/bg-desktop.jpg';
-import bg_bigDesktop from '../../assets/bg-bigDesktop.jpg';
+import bg_desktop from '../../assets/bg-desktop1.jpg';
+import bg_bigDesktop from '../../assets/bg-bigDesktop1.jpg';
 import logo from '../../assets/Logo.svg';
 import HeroText from './HeroText';
 import LanguajeSelector from './LanguajeSelector';
@@ -13,13 +13,14 @@ const { textos, idioma } = Astro.props;
 ---
 
 <div
-  class="relative h-screen sm:h-[799px] big-desktop:h-[900px]">
+  class="relative h-screen md:h-[799px] big-desktop:h-[900px]">
   <Image
     format="webp"
     alt=""
     src={bg_mobile}
     width={640}
     height={1148}
+    quality={100}
     class="absolute -z-10 h-screen object-cover sm:hidden"
   />
 
@@ -29,6 +30,7 @@ const { textos, idioma } = Astro.props;
     src={bg_desktop}
     width={1980}
     height={799}
+    quality={100}
     class="absolute -z-10 hidden h-[799px] w-[1980px] object-cover sm:inline big-desktop:hidden"
   />
 
@@ -38,42 +40,45 @@ const { textos, idioma } = Astro.props;
     src={bg_bigDesktop}
     width={3000}
     height={1211}
+    quality={100}
     class="absolute -z-10 hidden h-[900px] object-cover object-center big-desktop:inline"
   />
-
-  <Nav
-    textos={textos}
-    idioma={idioma}
-  />
-  <LanguajeSelector
-    client:load
-    idioma={idioma}
-  />
-
-  <div
-    class="flex flex-col items-center justify-center pt-[100px] md:flex-row md:pr-5 xl:pr-16">
-    <Image
-      alt="logo"
-      src={logo}
-      width={75}
-      height={91}
+  <div class="">
+    <Nav
+      textos={textos}
+      idioma={idioma}
+    />
+    <LanguajeSelector
+      client:load
+      idioma={idioma}
     />
 
-    <h1
-      class="text-center text-8xl font-light leading-[5rem] tracking-wide text-white xl:text-9xl">
-      Milvus <br class="sm:hidden" /> Travel
-    </h1>
+    <div
+      class="flex flex-col items-center justify-center pt-[100px] md:flex-row md:pr-5 xl:pr-16">
+      <Image
+        alt="logo"
+        src={logo}
+        width={75}
+        height={91}
+        class="xl:pt-6"
+      />
+
+      <h1
+        class="text-center text-8xl font-light leading-[5rem] tracking-wide text-white xl:text-9xl">
+        Milvus <br class="sm:hidden" /> Travel
+      </h1>
+    </div>
+
+    <HeroText
+      textos={textos}
+      idioma={idioma}
+    />
+
+    <MobileBurger
+      client:load
+      textos={textos}
+      idioma={idioma}
+    />
   </div>
-
-  <HeroText
-    textos={textos}
-    idioma={idioma}
-  />
-
-  <MobileBurger
-    client:load
-    textos={textos}
-    idioma={idioma}
-  />
 </div>
 <script></script>

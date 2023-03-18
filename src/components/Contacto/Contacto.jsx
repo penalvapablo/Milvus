@@ -5,7 +5,6 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Contacto = ({ textos, idioma }) => {
   const { copyright } = textos[idioma];
-  console.log(copyright);
   return (
     <footer
       id="contacto"
