@@ -20,55 +20,114 @@ const {
   <div
     class="2xl:: mx-auto mt-10 flex w-[95%] flex-col items-center gap-6 xl:w-[1224px] xl:flex-row xl:items-baseline xl:justify-between"
     id="container">
-    <div
-      id="grupo1"
-      class="flex flex-col gap-6">
-      <div
-        class="bg max-w-[600px] rounded-tl-[25px] rounded-br-[25px] bg-two font-semibold text-white">
-        <p class="p-7 text-lg">{testimonio1.texto}</p>
-        <p class="pr-7 pb-7 text-right text-lg text-one">
-          {testimonio1.autor}
-        </p>
-      </div>
-      <div
-        class="bg max-w-[600px] rounded-tl-[25px] rounded-br-[25px] bg-two font-semibold text-white">
-        <p class="p-7 text-lg">{testimonio2.texto}</p>
-        <p class="pr-7 pb-7 text-right text-lg text-one">
-          {testimonio2.autor}
-        </p>
-      </div>
-      <div
-        class="bg max-w-[600px] rounded-tl-[25px] rounded-br-[25px] bg-two font-semibold text-white">
-        <p class="p-7 text-lg">{testimonio3.texto}</p>
-        <p class="pr-7 pb-7 text-right text-lg text-one">
-          {testimonio3.autor}
-        </p>
-      </div>
-    </div>
-    <div
-      id="grupo2"
-      class="flex flex-col gap-6">
-      <div
-        class="bg max-w-[600px] rounded-tl-[25px] rounded-br-[25px] bg-two font-semibold text-white">
-        <p class="p-7 text-lg">{testimonio4.texto}</p>
-        <p class="pr-7 pb-7 text-right text-lg text-one">
-          {testimonio4.autor}
-        </p>
-      </div>
-      <div
-        class="bg max-w-[600px] rounded-tl-[25px] rounded-br-[25px] bg-two font-semibold text-white">
-        <p class="p-7 text-lg">{testimonio5.texto}</p>
-        <p class="pr-7 pb-7 text-right text-lg text-one">
-          {testimonio5.autor}
-        </p>
-      </div>
-      <div
-        class="bg max-w-[600px] rounded-tl-[25px] rounded-br-[25px] bg-two font-semibold text-white">
-        <p class="p-7 text-lg">{testimonio6.texto}</p>
-        <p class="pr-7 pb-7 text-right text-lg text-one">
-          {testimonio6.autor}
-        </p>
-      </div>
-    </div>
+    {
+      idioma === 'ar' ? (
+        <>
+          <div
+            id="grupo1"
+            class="flex flex-col gap-6">
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-right text-lg">
+                <bdi dir="rtl">{testimonio1.texto}</bdi>
+              </p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio1.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-right text-lg">
+                <bdi dir="rtl">{testimonio2.texto}</bdi>
+              </p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio2.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-right text-lg">
+                <bdi dir="rtl">{testimonio3.texto}</bdi>
+              </p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio3.autor}
+              </p>
+            </div>
+          </div>
+          <div
+            id="grupo2"
+            class="flex flex-col gap-6">
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-right text-lg">
+                <bdi dir="rtl">{testimonio4.texto}</bdi>
+              </p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio4.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-right text-lg">
+                <bdi dir="rtl">{testimonio5.texto}</bdi>
+              </p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio5.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-right text-lg">
+                <bdi dir="rtl">{testimonio6.texto}</bdi>
+              </p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio6.autor}
+              </p>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div
+            id="grupo1"
+            class="flex flex-col gap-6">
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-lg">{testimonio1.texto}</p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio1.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-lg">{testimonio2.texto}</p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio2.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-lg">{testimonio3.texto}</p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio3.autor}
+              </p>
+            </div>
+          </div>
+          <div
+            id="grupo2"
+            class="flex flex-col gap-6">
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-lg">{testimonio4.texto}</p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio4.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-lg">{testimonio5.texto}</p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio5.autor}
+              </p>
+            </div>
+            <div class="bg bg-two max-w-[600px] rounded-tl-[25px] rounded-br-[25px] font-semibold text-white">
+              <p class="p-7 text-lg">{testimonio6.texto}</p>
+              <p class="text-one pr-7 pb-7 text-right text-lg">
+                {testimonio6.autor}
+              </p>
+            </div>
+          </div>
+        </>
+      )
+    }
   </div>
 </section>
