@@ -7,6 +7,7 @@ import textos from '../components/About/aboutEs.json';
 import MobileBurger from '../components/Hero/MobileBurger';
 import heroTextos from '../components/Hero/heroEs.json';
 import contactoTextos from '../components/Contacto/contacto.json';
+import NavAbout from '../components/About/NavAbout';
 
 const idioma = 'es';
 ---
@@ -15,6 +16,10 @@ const idioma = 'es';
   title="Sobre Nosotros "
   description="Agencia de viajes personalizados"
   language="es">
+  <NavAbout
+    idioma={idioma}
+    textos={heroTextos}
+  />
   <About
     textos={textos}
     idioma={idioma}

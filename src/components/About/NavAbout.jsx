@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Nav = ({ textos, idioma }) => {
+const NavAbout = ({ textos, idioma }) => {
   return (
     <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
       <ul
         className={`flex ${
           idioma === 'ar' && 'flex-row-reverse'
-        } w-[700px] justify-between text-2xl text-white`}>
+        } w-[700px] justify-between text-2xl text-two`}>
         <li>
           {idioma === 'ar' && (
             <a
@@ -32,14 +32,14 @@ const Nav = ({ textos, idioma }) => {
         </li>
         <li>
           <a
-            href="#destinos"
+            href="/#destinos"
             className="capitalize">
             {textos.nav.destinos}
           </a>
         </li>
         <li>
           <a
-            href="#servicios"
+            href="/#servicios"
             className="capitalize">
             {textos.nav.servicios}
           </a>
@@ -79,4 +79,4 @@ const Nav = ({ textos, idioma }) => {
   );
 };
 
-export default Nav;
+export default NavAbout;
