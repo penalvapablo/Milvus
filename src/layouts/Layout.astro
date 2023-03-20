@@ -46,9 +46,24 @@ const { title, description, language } = Astro.props;
       content={description}
     />
     <meta
-      data-rh="true"
+      property="og:url"
+      content="https://milvus.vercel.app/"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:title"
+      content="Milvus Travel"
+    />
+    <meta
+      property="og:description"
+      content={description}
+    />
+    <meta
       property="og:image"
-      content="/Logo-preview.svg"
+      content="https://milvus.vercel.app/Logo-preview.svg"
     />
   </head>
 
