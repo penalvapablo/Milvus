@@ -5,7 +5,7 @@ const Destinos = ({ textos, idioma }) => {
     <section
       id="destinos"
       className="overflow-hidden bg-gray">
-      <h2
+      {/* <h2
         className={`mx-auto max-w-[80%] pt-12 pb-20 text-center 
         ${
           idioma === 'ar'
@@ -14,7 +14,30 @@ const Destinos = ({ textos, idioma }) => {
         }
        font-light leading-[3.5rem] tracking-wide text-two xl:max-w-[1120px]`}>
         {textos.titulo}
-      </h2>
+      </h2> */}
+      {idioma === 'ar' ? (
+        <h2
+          className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-3xl font-light leading-9 tracking-wide text-two md:text-6xl xl:max-w-[1120px]`}>
+          {textos.titulo1}
+          <br />
+          {textos.titulo2}
+          <br />
+          {textos.titulo3}
+          <br />
+          {textos.titulo4}
+          <br />
+          {textos.titulo5}
+          <br />
+          {textos.titulo6}
+          <br />
+          {textos.titulo7}
+        </h2>
+      ) : (
+        <h2
+          className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-5xl font-light leading-[3.5rem] tracking-wide text-two md:text-6xl lg:text-7xl xl:max-w-[1120px] xl:text-8xl`}>
+          {textos.titulo}
+        </h2>
+      )}
 
       <Grid
         textos={textos}
