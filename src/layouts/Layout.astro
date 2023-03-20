@@ -21,7 +21,7 @@ const { title, description, language } = Astro.props;
       type="image/svg+xml"
       href="/LOGO2.svg"
     />
-    <link
+    <!-- <link
       rel="alternate"
       href={`http://milvustravel.com/${language}`}
       hreflang={language}
@@ -35,7 +35,7 @@ const { title, description, language } = Astro.props;
       rel="alternate"
       href={`http://milvustravel.com/${language}`}
       hreflang={language}
-    />
+    /> -->
     <meta
       name="generator"
       content={Astro.generator}
@@ -46,21 +46,23 @@ const { title, description, language } = Astro.props;
       content={description}
     />
   </head>
+
   <body>
     <slot />
   </body>
-</html>
-<style is:global>
-  html {
-    scroll-behavior: smooth;
-    scrollbar-gutter: stable;
-  }
 
-  /* @font-face {
+  <style is:global>
+    html {
+      scroll-behavior: smooth;
+      scrollbar-gutter: stable;
+    }
+
+    /* @font-face {
     font-family: 'Montserrat';
     src: url('/fonts/Montserrat-Light.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
   } */
-</style>
+  </style>
+</html>

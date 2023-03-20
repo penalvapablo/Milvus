@@ -1,7 +1,7 @@
 ---
 import { Image } from '@astrojs/image/components';
 
-const { textos } = Astro.props;
+const { textos, idioma } = Astro.props;
 const {
   titulo1,
   titulo2,
@@ -33,13 +33,49 @@ const {
       class="w-full max-w-[550px] rounded-[15px]"
     />
     <div>
-      <p
-        class="max-w-[800px] text-center text-xl font-semibold text-two">
-        {p1}<br /><br />{p2}<br /><br />{p3}<br /><br />{
-          p4
-        }<br /><br />{p5}<br />
-        <br />{p6}
-      </p>
+      {
+        idioma === 'ar' ? (
+          <p class="text-two max-w-[800px] text-center text-xl font-semibold">
+            <bdi dir="rtl">
+              {p1}
+              <br />
+              <br />
+              {p2}
+              <br />
+              <br />
+              {p3}
+              <br />
+              <br />
+              {p4}
+              <br />
+              <br />
+              {p5}
+              <br />
+              <br />
+              {p6}
+            </bdi>
+          </p>
+        ) : (
+          <p class="text-two max-w-[800px] text-center text-xl font-semibold">
+            {p1}
+            <br />
+            <br />
+            {p2}
+            <br />
+            <br />
+            {p3}
+            <br />
+            <br />
+            {p4}
+            <br />
+            <br />
+            {p5}
+            <br />
+            <br />
+            {p6}
+          </p>
+        )
+      }
     </div>
   </div>
   <p></p>

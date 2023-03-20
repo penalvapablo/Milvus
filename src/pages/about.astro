@@ -8,7 +8,6 @@ import MobileBurger from '../components/Hero/MobileBurger';
 import heroTextos from '../components/Hero/heroEs.json';
 import contactoTextos from '../components/Contacto/contacto.json';
 
-console.log('object');
 const idioma = 'es';
 ---
 
@@ -16,7 +15,10 @@ const idioma = 'es';
   title="Sobre Nosotros "
   description="Agencia de viajes personalizados"
   language="es">
-  <About textos={textos} />
+  <About
+    textos={textos}
+    idioma={idioma}
+  />
   <Contacto
     client:load
     textos={contactoTextos}
