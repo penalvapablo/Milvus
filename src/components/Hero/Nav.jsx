@@ -6,7 +6,7 @@ const Nav = ({ textos, idioma }) => {
       <ul
         className={`flex ${
           idioma === 'ar' && 'flex-row-reverse'
-        } w-[700px] justify-between text-2xl text-white`}>
+        } w-[700px] justify-between text-xl text-white`}>
         <li>
           {idioma === 'ar' && (
             <a

@@ -13,7 +13,7 @@ const { textos, idioma } = Astro.props;
 ---
 
 <div
-  class="relative h-screen sm:h-[799px] big-desktop:h-[900px]">
+  class="sm:screen relative h-screen mobile-landscape:h-[600px]">
   <Image
     format="webp"
     alt=""
@@ -31,7 +31,7 @@ const { textos, idioma } = Astro.props;
     width={1980}
     height={799}
     quality={100}
-    class="absolute -z-10 hidden h-[799px] w-[1980px] object-cover sm:inline big-desktop:hidden"
+    class="absolute -z-10 hidden h-screen object-cover sm:inline mobile-landscape:h-[600px] big-desktop:hidden"
   />
 
   <Image
@@ -41,7 +41,7 @@ const { textos, idioma } = Astro.props;
     width={3000}
     height={1211}
     quality={100}
-    class="absolute -z-10 hidden h-[900px] object-cover object-center big-desktop:inline"
+    class="absolute -z-10 hidden h-screen object-cover object-center big-desktop:inline"
   />
   <div class="">
     <Nav

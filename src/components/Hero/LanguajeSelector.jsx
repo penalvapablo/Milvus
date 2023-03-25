@@ -13,7 +13,7 @@ const LanguajeSelector = ({ idioma }) => {
     <div className="absolute left-1/2 top-12 flex h-auto translate-x-[-50%]  justify-center xl:right-0 xl:left-auto 2xl:right-16">
       <a
         href="/"
-        className={`text-2xl ${
+        className={`text-xl ${
           language === 'es' ? 'text-one' : 'text-white'
         }`}>
         Es
@@ -21,7 +21,7 @@ const LanguajeSelector = ({ idioma }) => {
       <p className="mx-2 pt-0.5 text-xl text-white">/</p>
       <a
         href="/en"
-        className={`text-2xl ${
+        className={`text-xl ${
           language === 'en' ? 'text-one' : 'text-white'
         }`}>
         En
@@ -29,7 +29,7 @@ const LanguajeSelector = ({ idioma }) => {
       <p className="mx-2 pt-0.5 text-xl text-white">/</p>
       <a
         href="/ar"
-        className={`text-2xl leading-5 ${
+        className={`text-xl leading-5 ${
           language === 'ar' ? 'text-one' : 'text-white'
         }`}>
         عربي

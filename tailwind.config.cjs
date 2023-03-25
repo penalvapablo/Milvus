@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       screens: {
         'min-tall-mobile3': { raw: '(min-height: 600px)' },
+        'mobile-landscape': { raw: '(max-height: 600px)' },
         'min-tall-mobile': { raw: '(min-height: 700px)' },
         'min-tall-mobile2': { raw: '(min-height: 800px)' },
         'big-desktop': { raw: '(min-width: 1980px)' },
