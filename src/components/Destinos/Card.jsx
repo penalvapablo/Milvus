@@ -41,7 +41,7 @@ const Card = ({
           <div
             onClick={modalFn}
             className="fixed left-1/2 top-1/2 z-10 h-screen w-screen translate-x-[-50%] translate-y-[-50%]  bg-black/50"></div>
-          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px]  w-[90%] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two  xl:h-[800px] xl:w-[800px] xl:max-w-none min-tall-mobile:max-h-[800px] ">
+          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px] w-[90%]  max-w-[800px] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two  2xl:h-[600px] 2xl:w-[600px] 2xl:max-w-none min-tall-mobile:max-h-[600px] ">
             <button
               onClick={modalFn}
               id="close-modal"
@@ -60,18 +60,22 @@ const Card = ({
                 src={`/destinos/${destino}-modal.jpg`}
                 alt={destino}
                 loading="lazy"
-                className="absolute top-0 -z-10 hidden rounded-xl xl:block"
+                className="absolute top-0 -z-10 hidden rounded-xl 2xl:block"
               />
             </picture>
-            <h3 className="mx-auto max-w-[90%] text-center text-5xl font-semibold capitalize text-one xl:hidden">
+            <h3 className="mx-auto max-w-[90%] text-center text-5xl font-semibold capitalize text-one 2xl:hidden">
               {titulo}
             </h3>
             <h3
-              className={`mt-8 text-center text-6xl font-semibold capitalize text-${desktopColor} hidden xl:block`}>
+              className={`mt-8 text-center text-6xl font-semibold capitalize text-${desktopColor} hidden 2xl:block`}>
               {titulo}
             </h3>
-            <p className="mx-auto mt-8 max-h-[100px] w-[90%] scroll-ml-1 overflow-y-scroll text-center  text-lg font-semibold tracking-wide text-white xl:hidden min-tall-mobile3:max-h-[300px] min-tall-mobile2:max-h-[400px]">
-              {descripcion}
+            <p className="mx-auto mt-8 max-h-[100px] w-[90%] scroll-ml-1 overflow-y-scroll text-center  text-lg font-semibold tracking-wide text-white 2xl:hidden min-tall-mobile3:max-h-[300px] min-tall-mobile2:max-h-[400px]">
+              {idioma === 'ar' ? (
+                <bdi dir="rtl">{descripcion}</bdi>
+              ) : (
+                <>{descripcion}</>
+              )}
             </p>
 
             <a
@@ -80,12 +84,12 @@ const Card = ({
                   ? '962799757654'
                   : '5215554094418'
               }`}
-              class="mx-auto mt-8 mb-7 block w-[95%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-2xl font-bold text-two duration-200 hover:bg-one xl:hidden"
+              class="mx-auto mt-8 mb-7 block w-[95%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-2xl font-bold text-two duration-200 hover:bg-one 2xl:hidden"
               rel="noreferrer"
               target="_blank">
               {cta}
             </a>
-            <div className="absolute bottom-0 hidden h-fit w-full rounded-b-xl bg-black/80 xl:block">
+            <div className="absolute bottom-0 hidden h-fit w-full rounded-b-xl bg-black/80 2xl:block">
               <p className="mx-auto mt-8 w-[90%] text-center text-lg font-semibold tracking-wide text-white">
                 {idioma === 'ar' ? (
                   <bdi dir="rtl">{descripcion}</bdi>
