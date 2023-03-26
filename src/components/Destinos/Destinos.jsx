@@ -24,7 +24,7 @@ const Destinos = ({ textos, idioma }) => {
         </h2>
       ) : (
         <h2
-          className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-4xl font-light leading-[3.5rem] tracking-wide text-two md:text-6xl lg:text-7xl xl:max-w-[1120px] xl:text-8xl`}>
+          className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-5xl font-light leading-[3.5rem] tracking-wide text-two md:text-6xl lg:text-7xl xl:max-w-[1120px] `}>
           {textos.titulo}
         </h2>
       )}

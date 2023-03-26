@@ -9,12 +9,12 @@ const { titulo1, titulo2, texto1, texto2, span, cta } =
   id="servicios"
   class="pb-14">
   <h2
-    class={`mx-auto max-w-[95%] py-12 text-center text-6xl font-light leading-[4rem] tracking-wide  md:text-7xl lg:text-8xl  xl:max-w-[1200px] text-two `}>
+    class={`mx-auto max-w-[95%] py-12 text-center text-6xl font-light leading-[4rem] tracking-wide  md:text-7xl   xl:max-w-[1200px] text-two `}>
     {titulo1}<span class="text-one">{titulo2}</span>
   </h2>
 
   <p
-    class={`max-w-[800px] text-xl text-two w-[90%] mx-auto m-8 text-center font-semibold`}>
+    class={`max-w-[800px] text-lg text-two w-[90%] mx-auto m-8 text-center font-semibold`}>
     {texto1}{
       idioma !== 'ar' && (
         <>
@@ -29,7 +29,7 @@ const { titulo1, titulo2, texto1, texto2, span, cta } =
     href={`https://api.whatsapp.com/send?phone=${
       idioma === 'ar' ? '962799757654' : '5215554094418'
     }`}
-    class="mx-auto block w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-2xl font-bold text-two duration-200 hover:bg-one"
+    class="mx-auto block w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-xl font-bold text-two duration-200 hover:bg-one"
     rel="noreferrer"
     target="_blank">
     {cta}
