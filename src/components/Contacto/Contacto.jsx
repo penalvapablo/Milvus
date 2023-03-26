@@ -44,7 +44,7 @@ const Contacto = ({ textos, idioma }) => {
             }`}
             rel="noreferrer"
             target="_blank"
-            className="text-xl text-two duration-500 hover:text-one">
+            className="text-xl text-two duration-100 hover:text-one">
             {idioma === 'ar'
               ? '+962 7 9975 7654'
               : '+52 1 555409 4418'}
