@@ -10,7 +10,7 @@ const Card = ({
   cta,
   idioma,
 }) => {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [mobileColor, setMobileColor] = useState('one');
   const [desktopColor, setDesktopColor] = useState('one');
 
