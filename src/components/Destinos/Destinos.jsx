@@ -5,16 +5,6 @@ const Destinos = ({ textos, idioma }) => {
     <section
       id="destinos"
       className="overflow-hidden bg-gray">
-      {/* <h2
-        className={`mx-auto max-w-[80%] pt-12 pb-20 text-center 
-        ${
-          idioma === 'ar'
-            ? 'text-6xl'
-            : 'text-5xl md:text-6xl lg:text-7xl xl:text-8xl'
-        }
-       font-light leading-[3.5rem] tracking-wide text-two xl:max-w-[1120px]`}>
-        {textos.titulo}
-      </h2> */}
       {idioma === 'ar' ? (
         <h2
           className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-3xl font-light leading-9 tracking-wide text-two md:text-6xl xl:max-w-[1120px]`}>
@@ -34,7 +24,7 @@ const Destinos = ({ textos, idioma }) => {
         </h2>
       ) : (
         <h2
-          className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-5xl font-light leading-[3.5rem] tracking-wide text-two md:text-6xl lg:text-7xl xl:max-w-[1120px] xl:text-8xl`}>
+          className={`mx-auto max-w-[80%] pt-12 pb-20 text-center text-4xl font-light leading-[3.5rem] tracking-wide text-two md:text-6xl lg:text-7xl xl:max-w-[1120px] xl:text-8xl`}>
           {textos.titulo}
         </h2>
       )}
