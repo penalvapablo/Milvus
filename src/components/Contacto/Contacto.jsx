@@ -55,9 +55,12 @@ const Contacto = ({ textos, idioma }) => {
             icon={faEnvelope}
             className="h-[40px] justify-items-end text-end text-two"
           />
-          <p className="text-xl text-two ">
+
+          <a
+            href="mailto:info@milvus.travel"
+            className="text-xl text-two duration-100 hover:text-one">
             info@milvus.travel
-          </p>
+          </a>
         </div>
       </div>
       <p className="text-center text-sm text-one">
