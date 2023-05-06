@@ -65,6 +65,16 @@ const Contacto = ({ textos, idioma }) => {
       </div>
       <p className="text-center text-sm text-one">
         {copyright}
+        <br className="sm:hidden" />{' '}
+        <span className="hidden sm:inline"> - </span>{' '}
+        Desarrollado por{' '}
+        <a
+          href="https://penalva-portfolio.vercel.app/"
+          target="_blank"
+          aria-label="link a portfolio"
+          className="border-b">
+          Pablo
+        </a>
       </p>
     </footer>
   );
