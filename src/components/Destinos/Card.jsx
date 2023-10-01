@@ -81,7 +81,7 @@ const Card = ({
                   ? '962799757654'
                   : '5215554094418'
               }`}
-              class="mx-auto mt-8 mb-7 block w-[95%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-xl font-bold text-two duration-200 hover:bg-one xl:hidden"
+              className="mx-auto mt-8 mb-7 block w-[95%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-xl font-bold text-two duration-200 hover:bg-one xl:hidden"
               rel="noreferrer"
               target="_blank">
               {cta}
