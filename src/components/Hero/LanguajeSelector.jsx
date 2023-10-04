@@ -10,7 +10,7 @@ const LanguajeSelector = ({ idioma }) => {
   }, []);
 
   return (
-    <div className="absolute left-1/2 top-12 flex h-auto translate-x-[-50%]  justify-center xl:right-0 xl:left-auto 2xl:right-16">
+    <div className="absolute left-1/2 top-12 flex h-auto translate-x-[-50%]  justify-center md:top-8 xl:top-12 xl:right-0 xl:left-auto 2xl:right-16">
       <a
         href="/"
         className={`text-xl ${

@@ -2,11 +2,11 @@ import React from 'react';
 
 const NavAbout = ({ textos, idioma }) => {
   return (
-    <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
+    <nav className="absolute top-12 left-1/2 hidden w-[37.5rem] translate-x-[-50%] md:block">
       <ul
         className={`flex ${
           idioma === 'ar' && 'flex-row-reverse'
-        } w-[700px] justify-between text-2xl text-two`}>
+        }  justify-between gap-10 text-lg text-two`}>
         <li>
           {idioma === 'ar' && (
             <a
@@ -31,18 +31,50 @@ const NavAbout = ({ textos, idioma }) => {
           )}
         </li>
         <li>
-          <a
-            href="/#destinos"
-            className="capitalize">
-            {textos.nav.destinos}
-          </a>
+          {idioma === 'ar' && (
+            <a
+              href="/ar#destinos"
+              className="capitalize">
+              {textos.nav.destinos}
+            </a>
+          )}
+          {idioma === 'es' && (
+            <a
+              href="/#destinos"
+              className="capitalize">
+              {textos.nav.destinos}
+            </a>
+          )}
+          {idioma === 'en' && (
+            <a
+              href="/en#destinos"
+              className="capitalize">
+              {textos.nav.destinos}
+            </a>
+          )}
         </li>
         <li>
-          <a
-            href="/#servicios"
-            className="capitalize">
-            {textos.nav.servicios}
-          </a>
+          {idioma === 'ar' && (
+            <a
+              href="/ar#servicios"
+              className="capitalize">
+              {textos.nav.servicios}
+            </a>
+          )}
+          {idioma === 'es' && (
+            <a
+              href="/#servicios"
+              className="capitalize">
+              {textos.nav.servicios}
+            </a>
+          )}
+          {idioma === 'en' && (
+            <a
+              href="/en#servicios"
+              className="capitalize">
+              {textos.nav.servicios}
+            </a>
+          )}
         </li>
         <li>
           {idioma === 'ar' && (

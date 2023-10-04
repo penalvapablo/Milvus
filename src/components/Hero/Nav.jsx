@@ -2,11 +2,11 @@ import React from 'react';
 
 const Nav = ({ textos, idioma }) => {
   return (
-    <nav className="absolute top-12 left-1/2 hidden translate-x-[-50%] xl:block">
+    <nav className="absolute top-20 left-1/2 hidden w-[37.5rem] translate-x-[-50%] md:block  xl:top-[3.1rem]">
       <ul
         className={`flex ${
           idioma === 'ar' && 'flex-row-reverse'
-        } w-[700px] justify-between text-xl text-white`}>
+        }  justify-between text-lg text-white`}>
         <li>
           {idioma === 'ar' && (
             <a

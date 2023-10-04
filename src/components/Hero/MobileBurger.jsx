@@ -15,7 +15,7 @@ const MobileBurger = ({ textos, idioma }) => {
       : (document.body.style.overflow = 'auto');
   }
   return (
-    <div className="fixed bottom-0 z-10 xl:hidden">
+    <div className="fixed bottom-0 z-10 md:hidden">
       {mobileNav && (
         <MobileNav
           textos={textos}

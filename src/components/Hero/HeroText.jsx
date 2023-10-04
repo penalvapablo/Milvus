@@ -1,8 +1,8 @@
 const HeroText = ({ textos, idioma }) => {
   return (
     <p
-      className=" absolute bottom-[100px] left-1/2 w-[90%] translate-x-[-50%] text-center
-    text-2xl tracking-wide text-white sm:bottom-[4.5rem] xl:bottom-12 xl:text-2xl mobile-landscape:bottom-[20px]">
+      className=" absolute bottom-8 left-1/2 w-[90%] translate-x-[-50%] text-center
+    text-lg tracking-wide text-white sm:bottom-5 md:bottom-12 mobile-landscape:bottom-[20px]">
       <span className="text-white sm:text-one">
         {idioma === 'ar' ? (
           <bdi dir="rtl">{textos.texto1}</bdi>
