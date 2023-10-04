@@ -40,7 +40,7 @@ const Destinos = ({ textos, idioma }) => {
         {textos.texto1}
       </p>
       <p
-        className=" mx-auto w-[90%] pt-12 pb-12 text-center text-4xl font-semibold text-one md:w-[80%] md:text-5xl
+        className=" mx-auto w-[90%] pt-12 pb-12 text-center text-4xl font-semibold text-one md:w-[80%] 
       ">
         {textos.texto2}
       </p>

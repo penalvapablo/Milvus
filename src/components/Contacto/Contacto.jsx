@@ -8,7 +8,7 @@ const Contacto = ({ textos, idioma }) => {
   return (
     <footer
       id="contacto"
-      className=" bg-gray pb-14 pt-12 xl:pb-0">
+      className=" bg-gray pb-14 pt-12 md:pb-0">
       {/* <h2 className=" mx-auto max-w-[90%] pt-12 pb-16 text-center text-6xl font-light leading-[4rem] tracking-wide text-two  md:text-7xl lg:text-8xl xl:max-w-[1120px]  xl:text-8xl">
         {titulo}
       </h2> */}
@@ -16,10 +16,10 @@ const Contacto = ({ textos, idioma }) => {
         <div className="flex items-center gap-5">
           <FontAwesomeIcon
             icon={faPhone}
-            className="h-[40px] justify-items-end text-end text-two"
+            className="h-8 justify-items-end text-end text-two"
           />
           <a
-            className="text-xl text-two duration-100 hover:text-one"
+            className=" text-two duration-100 hover:text-one"
             href={`tel:+${
               idioma === 'ar'
                 ? '962799757654'
@@ -33,7 +33,7 @@ const Contacto = ({ textos, idioma }) => {
         <div className="flex items-center gap-6">
           <FontAwesomeIcon
             icon={faWhatsapp}
-            className="h-[40px] justify-items-end text-end text-two"
+            className="h-8 justify-items-end text-end text-two"
           />
 
           <a
@@ -44,7 +44,7 @@ const Contacto = ({ textos, idioma }) => {
             }`}
             rel="noreferrer"
             target="_blank"
-            className="text-xl text-two duration-100 hover:text-one">
+            className=" text-two duration-100 hover:text-one">
             {idioma === 'ar'
               ? '+962 7 9975 7654'
               : '+52 1 555409 4418'}
@@ -53,17 +53,17 @@ const Contacto = ({ textos, idioma }) => {
         <div className="flex items-center gap-6">
           <FontAwesomeIcon
             icon={faEnvelope}
-            className="h-[40px] justify-items-end text-end text-two"
+            className="h-8 justify-items-end text-end text-two"
           />
 
           <a
             href="mailto:info@milvus.travel"
-            className="text-xl text-two duration-100 hover:text-one">
+            className=" text-two duration-100 hover:text-one">
             info@milvus.travel
           </a>
         </div>
       </div>
-      <p className="text-center text-sm text-one">
+      <p className="text-center text-xs text-one">
         {copyright}
         <br className="sm:hidden" />{' '}
         <span className="hidden sm:inline"> - </span>{' '}
