@@ -63,7 +63,7 @@ const Card = ({
             onClick={modalFn}
             className="fixed left-1/2 top-1/2 z-10 h-screen w-screen translate-x-[-50%] translate-y-[-50%]  bg-black/50"></div>
           <h1>{}</h1>
-          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px] w-[85%]  max-w-[800px] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two  xl:h-[600px] xl:w-[600px] xl:max-w-none min-tall-mobile:max-h-[600px] ">
+          <div className="fixed left-1/2  top-1/2 z-50 h-fit max-h-[600px] w-[85%]  max-w-[400px] translate-x-[-50%] translate-y-[-50%] rounded-xl bg-two  min-tall-mobile:max-h-[600px] modal-view:h-[500px] modal-view:w-[500px]  modal-view:max-w-none ">
             <button
               onClick={modalFn}
               id="close-modal"
@@ -108,14 +108,14 @@ const Card = ({
                 }-modal.jpg`}
                 alt={destino}
                 loading="lazy"
-                className="absolute top-0 -z-10 hidden rounded-xl xl:block"
+                className="absolute top-0 -z-10 hidden rounded-xl modal-view:block"
               />
             </picture>
-            <h3 className="mx-auto max-w-[90%] text-center text-5xl font-semibold capitalize text-one xl:hidden">
+            <h3 className="mx-auto max-w-[90%] text-center text-5xl font-semibold capitalize text-one modal-view:hidden">
               {destinos[modal - 1].titulo}
             </h3>
 
-            <p className="mx-auto mt-8 max-h-[100px] w-[85%] scroll-ml-1 overflow-y-scroll text-center  text-base font-semibold tracking-wide text-white xl:hidden min-tall-mobile3:max-h-[300px] min-tall-mobile2:max-h-[300px]">
+            <p className="mx-auto mt-8 max-h-[100px] w-[85%] scroll-ml-1 overflow-y-scroll text-center  text-base font-semibold tracking-wide text-white min-tall-mobile3:max-h-[300px] min-tall-mobile2:max-h-[300px] modal-view:hidden">
               {idioma === 'ar' ? (
                 <bdi dir="rtl">
                   {destinos[modal - 1].descripcion}
@@ -131,14 +131,14 @@ const Card = ({
                   ? '962799757654'
                   : '5215554094418'
               }`}
-              className="mx-auto mt-8 mb-7 block w-[90%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-xl font-bold text-two duration-200 hover:bg-one xl:hidden"
+              className="mx-auto mt-8 mb-7 block w-[90%] max-w-[300px] transform rounded-full bg-four px-[3.75rem] py-2 text-center text-xl font-bold text-two duration-200 hover:bg-one modal-view:hidden"
               rel="noreferrer"
               target="_blank">
               {cta}
             </a>
-            <div className="absolute bottom-0 hidden h-full w-full rounded-xl bg-black/70 xl:block">
+            <div className="absolute bottom-0 hidden h-full w-full rounded-xl bg-black/70 modal-view:block">
               <h3
-                className={`mt-8 hidden text-center text-6xl font-semibold capitalize text-white xl:block`}>
+                className={`mt-8 hidden text-center text-6xl font-semibold capitalize text-white modal-view:block`}>
                 {destinos[modal - 1].titulo}
               </h3>
               <div className="absolute bottom-0 mb-7 flex flex-col items-center gap-7">

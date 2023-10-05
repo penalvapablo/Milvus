@@ -23,6 +23,9 @@ module.exports = {
         'min-tall-mobile': { raw: '(min-height: 700px)' },
         'min-tall-mobile2': { raw: '(min-height: 800px)' },
         'big-desktop': { raw: '(min-width: 1980px)' },
+        'modal-view': {
+          raw: '(min-width: 600px) and (min-height: 600px)',
+        },
       },
       fontFamily: {
         sans: [
