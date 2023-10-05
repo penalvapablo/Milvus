@@ -4,7 +4,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Contacto = ({ textos, idioma }) => {
-  const { copyright } = textos[idioma];
+  const { copyright, desarrollador } = textos[idioma];
   return (
     <footer
       id="contacto"
@@ -67,7 +67,7 @@ const Contacto = ({ textos, idioma }) => {
         {copyright}
         <br className="sm:hidden" />{' '}
         <span className="hidden sm:inline"> - </span>{' '}
-        Desarrollado por{' '}
+        {desarrollador}{' '}
         <a
           href="https://penalva-portfolio.vercel.app/"
           target="_blank"

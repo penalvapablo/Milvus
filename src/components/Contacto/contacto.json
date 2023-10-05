@@ -1,13 +1,16 @@
 {
   "ar":{
     "titulo":"اتصال",
-    "copyright": "جميع الحقوق محفوظة ٢٠٢٣"
+    "copyright": "جميع الحقوق محفوظة ٢٠٢٣",
+    "desarrollador": ""
   },
   "es":{
     "titulo":"Contacto",
-    "copyright": "Todos los derechos reservados 2023 - Milvus Travel"
+    "copyright": "Todos los derechos reservados 2023 - Milvus Travel",
+    "desarrollador": "Desarrollado por"
   },"en":{
     "titulo":"Contact",
-    "copyright": "All rights reserved 2023 - Milvus Travel"
+    "copyright": "All rights reserved 2023 - Milvus Travel",
+    "desarrollador": "Developed by"
   }
 }
