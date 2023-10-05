@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import About from '../components/About/About.astro';
+import AboutSection from '../components/About/About.astro';
 import Contacto from '../components/Contacto/Contacto';
 
 import textos from '../components/About/aboutEs.json';
-import MobileBurger from '../components/Hero/MobileBurger';
+import MobileBurger from '../components/MobileNav/MobileBurger';
 import heroTextos from '../components/Hero/heroEs.json';
 import contactoTextos from '../components/Contacto/contacto.json';
 import NavAbout from '../components/About/NavAbout';
@@ -20,7 +20,7 @@ const idioma = 'es';
     idioma={idioma}
     textos={heroTextos}
   />
-  <About
+  <AboutSection
     textos={textos}
     idioma={idioma}
   />
